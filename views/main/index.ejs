@@ -1,0 +1,19 @@
+<% include ../partials/header.ejs %>
+
+<% if (screen_name) { %>
+  <h1>Hello, <%= screen_name %>.</h1>
+<% } else { %>
+  <h1>Hello.</h1>
+<% } %>
+
+<form class="form" action="/user" method="post">
+  <input type="text" name="user" placeholder="screen_name or user_id">
+  <button type="submit">Submit</button>
+</form>
+
+<form class="form" action="/tweet" method="post">
+  <input type="text" name="tweet_id" placeholder="tweet_id">
+  <button type="submit">Submit</button>
+</form>
+
+<% include ../partials/footer.ejs %>

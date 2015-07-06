@@ -1,0 +1,51 @@
+<% include ../partials/header.ejs %>
+
+<img src="<%= data.profile_image_url.replace('_normal.', '.') %>" alt="<%= data.name %>'s avatar">
+
+<h1><%= data.name %>'s info</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>user id</th>
+      <th>screen name</th>
+      <th># followers</th>
+      <th># friends</th>
+      <th># listed</th>
+      <th># favourites</th>
+      <th># tweets</th>
+      <th>last tweet id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><%= data.id_str %></td>
+      <td><%= data.screen_name %></td>
+      <td><%= data.followers_count %></td>
+      <td><%= data.friends_count %></td>
+      <td><%= data.listed_count %></td>
+      <td><%= data.favourites_count %></td>
+      <td><%= data.statuses_count %></td>
+      <td><a href="/tweet/<%= data.status.id_str %>"><%= data.status.id_str %></a></td>
+    </tr>
+  </tbody>
+</table>
+
+<form class="form" action="/follows" method="post">
+  <input type="hidden" name="user_id" value="<%= data.id_str %>">
+  <input type="hidden" name="follows" value="followers">
+  <button type="submit">All followers</button>
+</form>
+
+<form class="form" action="/follows" method="post">
+  <input type="hidden" name="user_id" value="<%= data.id_str %>">
+  <input type="hidden" name="follows" value="friends">
+  <button type="submit">All friends</button>
+</form>
+
+<form class="form" action="/tweets" method="post">
+  <input type="hidden" name="user_id" value="<%= data.id_str %>">
+  <button type="submit">Latest tweets</button>
+</form>
+
+<% include ../partials/footer.ejs %>

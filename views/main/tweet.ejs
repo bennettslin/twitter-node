@@ -1,0 +1,36 @@
+<% include ../partials/header.ejs %>
+
+<% if (data.entities.media) { %>
+
+<img src="<%= data.entities.media[0].media_url %>" alt="<%= data.id_str %>'s first picture">
+
+<% } %>
+
+<h1><%= data.id_str %>'s info</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>tweet id</th>
+      <th>timedate</th>
+      <th>text</th>
+      <th>user id</th>
+      <th>user screen name</th>
+      <th># retweets</th>
+      <th># favourites</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/tweet/<%= data.id_str %>"><%= data.id_str %></a></td>
+      <td><%= data.created_at %></td>
+      <td><%= data.text %></td>
+        <td><a href="/user/<%= data.user.id_str %>"><%= data.user.id_str %></a></td>
+        <td><a href="/user/<%= data.user.screen_name %>"><%= data.user.screen_name %></td>
+      <td><%= data.retweet_count %></td>
+      <td><%= data.favorite_count %></td>
+    </tr>
+  </tbody>
+</table>
+
+<% include ../partials/footer.ejs %>

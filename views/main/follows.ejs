@@ -1,0 +1,11 @@
+<% include ../partials/header.ejs %>
+
+<h1><%= user_id %>'s <%= follows %></h1>
+
+<ul>
+  <% data.ids.forEach(function(id) { %>
+  <li><a href="/user/<%= id %>"><%= id %></li>
+  <% }) %>
+</ul>
+
+<% include ../partials/footer.ejs %>
