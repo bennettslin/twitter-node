@@ -1,10 +1,26 @@
 var express = require("express");
 var twitter = require('twitter');
 var bodyParser = require("body-parser");
+
 var geocoder = require("geocoder");
+var moment = require("moment");
 
 var router = express.Router();
 router.use(bodyParser.urlencoded({extended: false}));
+
+/*******************************************************************************
+* helper method for formatting dates
+*******************************************************************************/
+
+var formatDates = function(entities) {
+  if (!Array.isArray(entities)) {
+    entities = [entities];
+  }
+
+  entities.forEach(function(entity) {
+    entity.created_at = moment(entity.created_at).format("dddd, MMMM Do YYYY, h:mm:ss a");
+  });
+}
 
 /*******************************************************************************
 * get keys and secrets from developer account on https://apps.twitter.com
@@ -38,13 +54,16 @@ router.get('/', function (req, res) {
 });
 
 /*******************************************************************************
-* search
+* search query
 *******************************************************************************/
 
 router.get("/search/:q", function(req, res) {
   var params = {q: req.params.q};
   client.get("search/tweets", params, function(error, data, response) {
     if (!error) {
+
+      formatDates(data.statuses);
+
       res.render("main/search", {q: req.params.q, tweets: data.statuses})
     } else {
       res.send("Error:", error);
@@ -68,6 +87,7 @@ router.get("/user/:user", function(req, res) {
   client.get("users/show", params, function(error, data, response) {
     if (!error) {
       console.log(data);
+      formatDates(data);
       res.render("main/user", {data: data});
     } else {
       res.send("Error:", error);
@@ -89,6 +109,7 @@ router.get("/tweet/:tweet_id", function(req, res) {
   client.get(url, function (error, data, response) {
     if (!error) {
       console.log(data);
+      formatDates(data);
       res.render("main/tweet", {tweets: [data]});
     } else {
       res.send("Error:", error);
@@ -125,6 +146,7 @@ router.post("/tweets", function(req, res) {
   client.get("statuses/user_timeline", params, function (error, data, response) {
     if (!error) {
       console.log(data);
+      formatDates(data);
       res.render("main/tweets", {user_id: req.body.user_id, tweets: data});
     } else {
       res.send("Error:", error);

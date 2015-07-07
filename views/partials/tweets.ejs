@@ -4,10 +4,13 @@
       <th>tweet id</th>
       <th>timedate</th>
       <th>text</th>
+      <th>source</th>
       <th>user id</th>
       <th>user screen name</th>
+      <th>in reply to tweet</th>
       <th># retweets</th>
       <th># favourites</th>
+      <th>geo</th>
     </tr>
   </thead>
   <tbody>
@@ -16,10 +19,19 @@
         <td><a href="/tweet/<%= data.id_str %>"><%= data.id_str %></a></td>
         <td><%= data.created_at %></td>
         <td class="tweet-text"><%= data.text %></td>
+        <td class="tweet-source"><%= data.source %></td>
         <td><a href="/user/<%= data.user.id_str %>"><%= data.user.id_str %></a></td>
         <td><a href="/user/<%= data.user.screen_name %>"><%= data.user.screen_name %></td>
+
+        <% if (data.in_reply_to_status_id_str) { %>
+          <td><a href="/tweet/<%= data.in_reply_to_status_id_str %>"><%= data.in_reply_to_status_id_str %></a></td>
+        <% } else { %>
+          <td>null</td>
+        <% } %>
+
         <td><%= data.retweet_count %></td>
         <td><%= data.favorite_count %></td>
+        <td><%= data.geo ? data.geo : 'null' %></td>
       </tr>
   <% }) %>
   </tbody>
@@ -33,6 +45,12 @@
   for (var i = 0; i < textElements.length; i++) {
     var textElement = textElements[i];
     textElement.innerHTML = linkify(textElement.innerText);
+  }
+
+  var sourceElements = document.getElementsByClassName("tweet-source");
+  for (var i = 0; i < sourceElements.length; i++) {
+    var sourceElement = sourceElements[i];
+    sourceElement.innerHTML = sourceElement.innerText;
   }
 
 </script>
