@@ -18,7 +18,9 @@ var formatDates = function(entities) {
   }
 
   entities.forEach(function(entity) {
-    entity.created_at = moment(entity.created_at).format("dddd, MMMM Do YYYY, h:mm:ss a");
+
+    // check http://momentjs.com/docs/#/displaying/
+    entity.created_at = moment(entity.created_at).format("ddd MMM Do 'YY, h:mma");
   });
 }
 
