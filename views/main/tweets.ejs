@@ -2,32 +2,6 @@
 
 <h1><%= user_id %>'s tweets</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>tweet id</th>
-      <th>timedate</th>
-      <th>text</th>
-      <th>user id</th>
-      <th>user screen name</th>
-      <th># retweets</th>
-      <th># favourites</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% tweets.forEach(function(data) { %>
-      <tr>
-        <td><a href="/tweet/<%= data.id_str %>"><%= data.id_str %></a></td>
-        <td><%= data.created_at %></td>
-        <td><%= data.text %></td>
-        <td><a href="/user/<%= data.user.id_str %>"><%= data.user.id_str %></a></td>
-        <td><a href="/user/<%= data.user.screen_name %>"><%= data.user.screen_name %></td>
-        <td><%= data.retweet_count %></td>
-        <td><%= data.favorite_count %></td>
-      </tr>
-  <% }) %>
-  </tbody>
-</table>
-
+<% include ../partials/tweets.ejs %>
 <% include ../partials/footer.ejs %>
 

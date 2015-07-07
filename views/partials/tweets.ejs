@@ -1,0 +1,38 @@
+<table>
+  <thead>
+    <tr>
+      <th>tweet id</th>
+      <th>timedate</th>
+      <th>text</th>
+      <th>user id</th>
+      <th>user screen name</th>
+      <th># retweets</th>
+      <th># favourites</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% tweets.forEach(function(data) { %>
+      <tr>
+        <td><a href="/tweet/<%= data.id_str %>"><%= data.id_str %></a></td>
+        <td><%= data.created_at %></td>
+        <td class="tweet-text"><%= data.text %></td>
+        <td><a href="/user/<%= data.user.id_str %>"><%= data.user.id_str %></a></td>
+        <td><a href="/user/<%= data.user.screen_name %>"><%= data.user.screen_name %></td>
+        <td><%= data.retweet_count %></td>
+        <td><%= data.favorite_count %></td>
+      </tr>
+  <% }) %>
+  </tbody>
+</table>
+
+<!-- this converts tags to links in tweet text -->
+<script src="/script.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var textElements = document.getElementsByClassName("tweet-text");
+  for (var i = 0; i < textElements.length; i++) {
+    var textElement = textElements[i];
+    textElement.innerHTML = linkify(textElement.innerText);
+  }
+
+</script>

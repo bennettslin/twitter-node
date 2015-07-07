@@ -1,0 +1,22 @@
+<% include ../partials/header.ejs %>
+
+<h1>Trending around <%= address %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>url</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% trends.forEach(function(trend) { %>
+      <tr>
+        <td><a href="/search/<%= trend.name.replace('#', '') %>"><%= trend.name %></a></td>
+        <td><a href="<%= trend.url %>"><%= trend.url %></a></td>
+      </tr>
+  <% }) %>
+  </tbody>
+</table>
+
+<% include ../partials/footer.ejs %>

@@ -1,6 +1,7 @@
 var express = require("express");
 var twitter = require('twitter');
 var bodyParser = require("body-parser");
+var geocoder = require("geocoder");
 
 var router = express.Router();
 router.use(bodyParser.urlencoded({extended: false}));
@@ -37,6 +38,21 @@ router.get('/', function (req, res) {
 });
 
 /*******************************************************************************
+* search
+*******************************************************************************/
+
+router.get("/search/:q", function(req, res) {
+  var params = {q: req.params.q};
+  client.get("search/tweets", params, function(error, data, response) {
+    if (!error) {
+      res.render("main/search", {q: req.params.q, tweets: data.statuses})
+    } else {
+      res.send("Error:", error);
+    }
+  })
+});
+
+/*******************************************************************************
 * individual user
 *******************************************************************************/
 
@@ -49,7 +65,7 @@ router.get("/user/:user", function(req, res) {
     params = {user_id: user};
   }
 
-  client.get("users/show", params, function (error, data, response) {
+  client.get("users/show", params, function(error, data, response) {
     if (!error) {
       console.log(data);
       res.render("main/user", {data: data});
@@ -73,7 +89,7 @@ router.get("/tweet/:tweet_id", function(req, res) {
   client.get(url, function (error, data, response) {
     if (!error) {
       console.log(data);
-      res.render("main/tweet", {data: data});
+      res.render("main/tweet", {tweets: [data]});
     } else {
       res.send("Error:", error);
     }
@@ -115,6 +131,43 @@ router.post("/tweets", function(req, res) {
     }
   });
 });
+
+/*******************************************************************************
+* trends for place from geocoder
+*******************************************************************************/
+
+router.post("/trends-place", function(req, res) {
+
+  // first geocode coordinates from address
+  geocoder.geocode(req.body.address, function (error, data) {
+    if (!error) {
+
+      // next get woeid (Where On Earth ID) from coordinates
+      // more info here: https://en.wikipedia.org/wiki/GeoPlanet
+      var params = {lat: data.results[0].geometry.location.lat,
+                    "long": data.results[0].geometry.location.lng};
+      client.get("trends/closest", params, function(error, data, response) {
+        if (!error) {
+
+          // finally get top trends for woeid
+          var params = {id: data[0].woeid};
+          client.get("trends/place", params, function(error, data, response) {
+            if (!error) {
+              res.render("main/trends", {address: req.body.address, trends: data[0].trends})
+            } else {
+              res.send("Error:", error);
+            }
+          })
+
+        } else {
+          res.send("Error:", error);
+        }
+      })
+    } else {
+      res.send("Error:", error);
+    }
+  });
+})
 
 /*******************************************************************************
 * streaming API
