@@ -14,24 +14,24 @@
     </tr>
   </thead>
   <tbody>
-    <% tweets.forEach(function(data) { %>
+    <% tweets.forEach(function(tweet) { %>
       <tr>
-        <td><a href="/tweet/<%= data.id_str %>"><%= data.id_str %></a></td>
-        <td><%= data.created_at %></td>
-        <td class="tweet-text"><%= data.text %></td>
-        <td class="tweet-source"><%= data.source %></td>
-        <td><a href="/user/<%= data.user.id_str %>"><%= data.user.id_str %></a></td>
-        <td><a href="/user/<%= data.user.screen_name %>"><%= data.user.screen_name %></td>
+        <td><a href="/tweet/<%= tweet.id_str %>"><%= tweet.id_str %></a></td>
+        <td><%= tweet.created_at %></td>
+        <td class="tweet-text"><%= tweet.text %></td>
+        <td class="tweet-source"><%= tweet.source %></td>
+        <td><a href="/user/<%= tweet.user.id_str %>"><%= tweet.user.id_str %></a></td>
+        <td><a href="/user/<%= tweet.user.screen_name %>"><%= tweet.user.screen_name %></td>
 
-        <% if (data.in_reply_to_status_id_str) { %>
-          <td><a href="/tweet/<%= data.in_reply_to_status_id_str %>"><%= data.in_reply_to_status_id_str %></a></td>
+        <% if (tweet.in_reply_to_status_id_str) { %>
+          <td><a href="/tweet/<%= tweet.in_reply_to_status_id_str %>"><%= tweet.in_reply_to_status_id_str %></a></td>
         <% } else { %>
           <td>null</td>
         <% } %>
 
-        <td><%= data.retweet_count %></td>
-        <td><%= data.favorite_count %></td>
-        <td><%= data.geo ? data.geo : 'null' %></td>
+        <td><%= tweet.retweet_count %></td>
+        <td><%= tweet.favorite_count %></td>
+        <td><%= tweet.geo ? tweet.geo.coordinates[0].toFixed(2) + ", " + tweet.geo.coordinates[1].toFixed(2) : 'null' %></td>
       </tr>
   <% }) %>
   </tbody>

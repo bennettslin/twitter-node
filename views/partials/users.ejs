@@ -1,0 +1,48 @@
+<table>
+  <thead>
+    <tr>
+      <th>user id</th>
+      <th>screen name</th>
+      <th>created at</th>
+      <th>verified</th>
+      <th>location</th>
+      <th>description</th>
+      <th># followers</th>
+      <th># friends</th>
+      <th># listed</th>
+      <th># favourites</th>
+      <th># tweets</th>
+      <th>last tweet id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% users.forEach(function(user) { %>
+      <tr>
+        <td><a href="/user/<%= user.id_str %>"><%= user.id_str %></a></td>
+        <td><%= user.screen_name %></td>
+        <td><%= user.created_at %></td>
+        <td><%= user.verified %></td>
+        <td><%= user.location %></td>
+        <td class="description-text"><%= user.description %></td>
+        <td><%= user.followers_count %></td>
+        <td><%= user.friends_count %></td>
+        <td><%= user.listed_count %></td>
+        <td><%= user.favourites_count %></td>
+        <td><%= user.statuses_count %></td>
+        <td><a href="/tweet/<%= user.status.id_str %>"><%= user.status.id_str %></a></td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<!-- this converts tags to links in description text -->
+<script src="/script.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+  var textElements = document.getElementsByClassName("description-text");
+  for (var i = 0; i < textElements.length; i++) {
+    var textElement = textElements[i];
+    textElement.innerHTML = linkify(textElement.innerText);
+  }
+
+</script>

@@ -1,6 +1,7 @@
 var express = require("express");
 var twitter = require('twitter');
 var bodyParser = require("body-parser");
+var async = require("async");
 
 var geocoder = require("geocoder");
 var moment = require("moment");
@@ -73,6 +74,10 @@ router.get("/search/:q", function(req, res) {
   })
 });
 
+router.post("/search", function(req, res) {
+  res.redirect("/search/" + req.body.q);
+});
+
 /*******************************************************************************
 * individual user
 *******************************************************************************/
@@ -90,7 +95,7 @@ router.get("/user/:user", function(req, res) {
     if (!error) {
       console.log(data);
       formatDates(data);
-      res.render("main/user", {data: data});
+      res.render("main/user", {users: [data]});
     } else {
       res.send("Error:", error);
     }
@@ -131,8 +136,52 @@ router.post("/follows", function(req, res) {
   var params = {user_id: req.body.user_id}
   client.get(req.body.follows + "/ids", params, function (error, data, response) {
     if (!error) {
+
       console.log(data);
-      res.render("main/follows", {follows: req.body.follows, user_id: req.body.user_id, data: data});
+      var ids = data.ids; // array of user ids
+
+      // separate lists of a hundred, at most 10 for now
+      // each list is a single string of user ids separated by comma
+      var listsOf100 = [];
+      while (listsOf100.length < 10 && ids.length > 0) {
+        var listString = ids.splice(0, 100).join(",");
+        listsOf100.push(listString);
+      }
+
+      // call Twitter API, 100 users at a time
+      var users = [];
+      async.each(listsOf100, function(listString, callback) {
+
+        var params = {user_id: listString};
+        client.get("users/lookup", params, function(error, data, response) {
+          if (!error) {
+            formatDates(data);
+            users = users.concat(data);
+            callback();
+
+          } else {
+            callback(error);
+          }
+        })
+
+      }, function(error) {
+
+        if (!error) {
+
+          // add remaining ids
+          var remainingIds = ids.map(function(id) {
+            return { id_str: id, status: { id_str: "" } };
+          })
+          users = users.concat(remainingIds);
+
+          console.log("users count", users.length);
+          res.render("main/follows", {follows: req.body.follows, user_id: req.body.user_id, users: users});
+
+        } else {
+          res.send("Error:", error);
+        }
+
+      })
     } else {
       res.send("Error:", error);
     }
