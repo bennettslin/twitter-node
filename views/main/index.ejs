@@ -26,4 +26,12 @@
   <button type="submit">Submit</button>
 </form>
 
+<form class="form" action="/email" method="post">
+  <legend>Email using nodemailer</legend>
+  <input name="email_to" type="text" placeholder="email to" value="bennett@crownsocial.com" />
+  <input name="subject" type="text" placeholder="subject" value="Hi there" />
+  <textarea name="content" placeholder="content">This is just a test.</textarea>
+  <button type="submit">Submit</button>
+</form>
+
 <% include ../partials/footer.ejs %>

@@ -29,7 +29,11 @@
         <td><%= user.listed_count %></td>
         <td><%= user.favourites_count %></td>
         <td><%= user.statuses_count %></td>
-        <td><a href="/tweet/<%= user.status.id_str %>"><%= user.status.id_str %></a></td>
+        <% if (user.status) { %>
+          <td><a href="/tweet/<%= user.status.id_str %>"><%= user.status.id_str %></a></td>
+        <% } else { %>
+          <td></td>
+        <% } %>
       </tr>
     <% }) %>
   </tbody>

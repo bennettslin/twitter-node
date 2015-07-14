@@ -2,9 +2,9 @@ var express = require("express");
 var twitter = require('twitter');
 var bodyParser = require("body-parser");
 var async = require("async");
-
 var geocoder = require("geocoder");
 var moment = require("moment");
+var nodemailer = require("nodemailer");
 
 var router = express.Router();
 router.use(bodyParser.urlencoded({extended: false}));
@@ -21,7 +21,7 @@ var formatDates = function(entities) {
   entities.forEach(function(entity) {
 
     // check http://momentjs.com/docs/#/displaying/
-    entity.created_at = moment(entity.created_at).format("ddd MMM Do 'YY, h:mma");
+    entity.created_at = moment(entity.created_at).format("ddd MMM Do YY, h:mma");
   });
 }
 
@@ -41,19 +41,46 @@ var client = new twitter({
 * currently disabled to avoid getting throttled by rate limit
 *******************************************************************************/
 
-router.get('/', function (req, res) {
-
-/*
-  client.get("account/settings", function (error, data, response) {
-    if (!error) {
-      res.render("main/index", {screen_name: data.screen_name});
-    } else {
-      res.render("main/index", {screen_name: ""});
-    }
-  });
-*/
+router.get("/", function (req, res) {
 
   res.render("main/index", {screen_name: ""});
+});
+
+/*******************************************************************************
+* send email
+*******************************************************************************/
+
+router.post("/email", function(req, res) {
+  console.log("get called");
+  var smtpTransport = nodemailer.createTransport("SMTP", {
+    service: "Gmail",
+    auth: {
+      user: process.env.GMAIL_ADDRESS,
+      pass: process.env.GMAIL_PASSWORD
+    }
+  });
+
+  console.log(req.body.email_to);
+  console.log(req.body.subject);
+  console.log(req.body.content);
+
+  var mailOptions = {
+    to: req.body.email_to,
+    subject : req.body.subject,
+    text : req.body.content
+  }
+
+  console.log(mailOptions);
+
+  smtpTransport.sendMail(mailOptions, function(error, response) {
+    if (error) {
+      console.log("Error:", error);
+      res.send("Error:", error);
+    } else {
+      console.log("Message sent: " + response.message);
+      res.redirect("/");
+    }
+  });
 });
 
 /*******************************************************************************
@@ -155,6 +182,8 @@ router.post("/follows", function(req, res) {
         var params = {user_id: listString};
         client.get("users/lookup", params, function(error, data, response) {
           if (!error) {
+
+            // success
             formatDates(data);
             users = users.concat(data);
             callback();

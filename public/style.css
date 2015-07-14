@@ -1,5 +1,15 @@
-.form input[type="text"] {
+.form {
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 640px;
+}
+
+.form legend, input[type="text"], textarea {
   font-size: 2em;
+  margin: 5px;
+}
+
+.form input[type="text"], textarea {
   height: 2em;
   width: 500px;
   border: 1px solid black;
