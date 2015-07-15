@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Twitter Node app</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<form class="form" action="/admin/form" method="post">
+  <fieldset>
+    <label>User name</label><br>
+    <input type="text" name="username" placeholder="screen_name or user_id" value="bennettslin">
+  </fieldset>
+  <fieldset>
+    <label>Influencers</label><br>
+    <input type="text" name="influencer1" placeholder="influencer 1" value="crownsocial">
+    <input type="text" name="influencer2" placeholder="influencer 2" value="microsoftdesign">
+    <input type="text" name="influencer3" placeholder="influencer 3" value="emccorp">
+  </fieldset>
+  <fieldset>
+    <label>Hashtags</label><br>
+    <input type="text" name="hashtag1" placeholder="hashtag 1" value="socialmedia">
+    <input type="text" name="hashtag2" placeholder="hashtag 2" value="microsoft">
+    <input type="text" name="hashtag3" placeholder="hashtag 3" value="emc">
+  </fieldset>
+  <button type="submit">Submit</button>
+</form>
+
+<% include ../partials/footer.ejs %>

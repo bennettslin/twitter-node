@@ -1,0 +1,292 @@
+<% include ../partials/header.ejs %>
+
+<input id="followers_count" type="hidden" value="<%= myUser.followers_count %>">
+<input id="tweets_count" type="hidden" value="<%= myUser.statuses_count %>">
+
+<script>
+
+  var followers_count = document.getElementById("followers_count").value;
+  var tweets_count = document.getElementById("tweets_count").value;
+
+  var overlayData = {
+    labels: ["July"],
+    datasets: [
+      {
+        label: "total followers",
+        type: "bar",
+        fillColor: "rgba(128, 128, 128, 0.4)",
+        strokeColor: "rgba(128, 128, 128, 0.8)",
+        highlightFill: "rgba(228, 135, 27, 0.75)",
+        highlightStroke: "rgba(228, 135, 27, 1)",
+        data: [followers_count]
+      },
+      {
+        label: "engagements per post",
+        type: "line",
+        fillColor: "rgba(192, 192, 192,0.4)",
+        strokeColor: "rgba(192, 192, 192,0.8)",
+        pointColor: "rgba(192, 192, 192,1)",
+        pointStrokeColor: "#fff",
+        pointHighlightFill: "#fff",
+        pointHighlightStroke: "rgba(110,110,110,1)",
+        data: [65]
+      }
+    ]
+  };
+
+  var barData = {
+    labels: ["July"],
+    datasets: [
+      {
+        label: "total tweets",
+        fillColor: "rgba(160, 160, 160, 0.4)",
+        strokeColor: "rgba(160, 160, 160, 0.8)",
+        highlightFill: "rgba(228, 135, 27, 0.75)",
+        highlightStroke: "rgba(228, 135, 27, 1)",
+        data: [tweets_count]
+      }
+    ]
+  };
+
+  var doughnutData = [
+    {
+      value: 125,
+      color:"rgb(96, 96, 96)",
+      highlight: "rgb(228, 135, 27)",
+      label: "replies"
+    },
+    {
+      value: 100,
+      color: "rgb(160, 160, 160)",
+      highlight: "rgb(228, 135, 27)",
+      label: "retweets"
+    },
+    {
+      value: 50,
+      color: "rgb(128, 128, 128)",
+      highlight: "rgb(228, 135, 27)",
+      label: "links"
+    },
+    {
+      value: 75,
+      color: "rgb(192, 192, 192)",
+      highlight: "rgb(228, 135, 27)",
+      label: "hashtags"
+    }
+  ]
+
+</script>
+
+<!-- Content Section -->
+<section id="content">
+  <div class="container section-container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 section-header-container">
+        <h2>Content</h2>
+        <ul>
+          <li><i class="fa fa-user"></i> Current follower count: <%= myUser.followers_count %></li>
+          <li><i class="fa fa-clock-o"></i> Average time to respond: <strong>10s</strong></li>
+          <li><i class="fa fa-reply-all"></i> Mentions replied to: <strong>45%</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row module-row">
+      <div class="col-sm-4 module-wrapper">
+        <div class="module">
+          <h5>Overlay Chart</h5>
+          <ul>
+            <li><i class="fa fa-square gray-4"></i> total followers</li>
+            <li><i class="fa fa-square gray-6"></i> engagements per post</li>
+          </ul>
+          <canvas width="320" height="280" id="overlay-chart"></canvas>
+        </div>
+      </div>
+      <div class="col-sm-4 module-wrapper">
+        <div class="module">
+          <h5>Bar Chart</h5>
+          <ul>
+            <li><i class="fa fa-square gray-5"></i> total tweets</li>
+          </ul>
+          <canvas width="320" height="280" id="bar-chart"></canvas>
+        </div>
+      </div>
+      <div class="col-sm-4 module-wrapper">
+        <div class="module">
+          <h5>Doughnut Chart</h5>
+          <ul>
+            <li><i class="fa fa-square gray-3"></i> replies</li>
+            <li><i class="fa fa-square gray-5"></i> retweets</li>
+            <li><i class="fa fa-square gray-4"></i> links</li>
+            <li><i class="fa fa-square gray-6"></i> hashtags</li>
+          </ul>
+          <canvas width="320" height="280" id="doughnut-chart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Audience Section -->
+<section id="audience">
+  <div class="container section-container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 section-header-container">
+        <h2>Audience</h2>
+      </div>
+    </div>
+    <div class="row module-row">
+      <div class="col-sm-4 module-wrapper">
+        <div class="module">
+          <h5>Table</h5>
+          <p>top words in follower bios</p>
+          <div class="submodule-wrapper">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Words</th>
+                  <th>Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>social</td>
+                  <td>89</td>
+                </tr>
+                <tr>
+                  <td>media</td>
+                  <td>76</td>
+                </tr>
+                <tr>
+                  <td>microsoft</td>
+                  <td>55</td>
+                </tr>
+                <tr>
+                  <td>emc</td>
+                  <td>43</td>
+                </tr>
+                <tr>
+                  <td>tech</td>
+                  <td>27</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 module-wrapper">
+        <div class="module">
+          <h5>Table</h5>
+          <p>most frequently followed by followers</p>
+          <div class="submodule-wrapper">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Followers</th>
+                  <th>Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>@crownsocial</td>
+                  <td>34</td>
+                </tr>
+                <tr>
+                  <td>@zapan</td>
+                  <td>47</td>
+                </tr>
+                <tr>
+                  <td>@nnjashan</td>
+                  <td>23</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4 module-wrapper">
+        <div class="module">
+          <h5>Map</h5>
+          <p>heat map of follower locations</p>
+          <div class="submodule-wrapper">
+            <div id='map'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trends Section -->
+<section id="trends">
+  <div class="container section-container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 section-header-container">
+        <h2>Trends</h2>
+      </div>
+    </div>
+    <div class="row module-row">
+      <div class="col-sm-6 module-wrapper">
+        <div class="module">
+          <h5>Influencers</h5>
+          <p>top post by each influencer</p>
+          <% influencers.forEach(function(influencer) { %>
+            <div class="trend-module">
+              <img src="<%= influencer.profile_image_url.replace('_normal.', '.') %>" alt="">
+              <div class="trend-submodule-left">
+                <a href="#"><%= influencer.screen_name%></a>
+              </div>
+              <div class="trend-submodule-right">
+                <% if (influencer.status) { %>
+                  <a href="#"><%= influencer.status.text %></a>
+                <% } %>
+              </div>
+            </div>
+          <% }) %>
+        </div>
+      </div>
+      <div class="col-sm-6 module-wrapper">
+        <div class="module">
+          <h5>Hashtags</h5>
+          <p>top hashtag usages</p>
+          <% for (var i = 0; i < 3; i++) { %>
+            <div class="trend-module">
+              <img src="<%= hashtagPosts[i][0].user.profile_image_url.replace('_normal.', '.') %>" alt="">
+              <div class="trend-submodule-left">
+                <a href="#">#<%= hashtags[i] %></a>
+              </div>
+              <div class="trend-submodule-right">
+                <a href="#"><%= hashtagPosts[i][0].text %></a>
+              </div>
+            </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section id="cta">
+  <div class="container section-container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 section-header-container">
+        <h2>CTA</h2>
+      </div>
+    </div>
+    <div class="row module-row">
+      <div class="col-sm-12 module-wrapper">
+        <div class="module">
+          <h5>Email Alert Settings</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="footer">
+  <div class="container text-center">
+    <p>Copyright &copy; Crown Social 2015</p>
+  </div>
+</section>
+
+<% include ../partials/footer.ejs %>
