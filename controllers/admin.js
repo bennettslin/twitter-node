@@ -41,8 +41,6 @@ router.get("/", function (req, res) {
 *
 * The desired data will eventually be stored in the database,
 * and then only the desired data from the database will be passed to the HTML.
-*
-* At present, this does not get influencerTweets.
 *******************************************************************************/
 
 var getHashtagPosts = function(object, hashtags, res) {
@@ -171,6 +169,17 @@ var getMyFollowers = function(object, user_id, res) {
           })
           followers = followers.concat(remainingIds);
           object.myFollowers = followers;
+
+          // get follower descriptions
+          var descriptions = [];
+          followers.forEach(function(follower) {
+            if (follower.description) {
+              descriptions.push(follower.description);
+            }
+          });
+
+          // sort descriptions, and add to object
+          object.wordCountArray = sortedArrayOfWordCounts(descriptions);
           getMyTweets(object, user_id, res);
 
         } else {
@@ -201,6 +210,48 @@ var getMyUser = function(object, username, res) {
       res.send("Error:", error);
     }
   });
+}
+
+/*******************************************************************************
+* helper method to convert an array of text descriptions
+* into an array of objects, sorted from highest to lowest count.
+* The object format is [ {word: "string1", count: n}, ... ].
+*******************************************************************************/
+
+var sortedArrayOfWordCounts = function(strings) {
+  if(!strings) return;
+
+  // Convert array to a long string
+  strings = strings.join(' ');
+
+  // Strip stringified objects and punctuations from the string
+  strings = strings.toLowerCase().replace(/object Object/g, '').replace(/[\+\.,\/#!$%\^&\*{}=_`~]/g,'');
+
+  // Convert the str back into an array
+  strings = strings.split(' ');
+
+  // Count frequency of word occurrence
+  var wordCount = {};
+
+  for(var i = 0; i < strings.length; i++) {
+    if (!wordCount[strings[i]])
+        wordCount[strings[i]] = 0;
+
+    wordCount[strings[i]]++; // {'hi': 12, 'foo': 2 ...}
+  }
+
+  var wordCountArr = [];
+
+  for(var prop in wordCount) {
+    wordCountArr.push({word: prop, count: wordCount[prop]});
+  }
+
+  // sort based on count, largest first
+  wordCountArr.sort(function(objectA, objectB) {
+    return objectB.count - objectA.count;
+  });
+
+  return wordCountArr;
 }
 
 /*******************************************************************************

@@ -148,26 +148,12 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>social</td>
-                  <td>89</td>
-                </tr>
-                <tr>
-                  <td>media</td>
-                  <td>76</td>
-                </tr>
-                <tr>
-                  <td>microsoft</td>
-                  <td>55</td>
-                </tr>
-                <tr>
-                  <td>emc</td>
-                  <td>43</td>
-                </tr>
-                <tr>
-                  <td>tech</td>
-                  <td>27</td>
-                </tr>
+                <% for (var i = 0; i < 3; i++) { %>
+                  <tr>
+                    <td><%= wordCountArray[i].word %></td>
+                    <td><%= wordCountArray[i].count %></td>
+                  </tr>
+                <% } %>
               </tbody>
             </table>
           </div>
