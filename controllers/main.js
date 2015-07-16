@@ -21,8 +21,30 @@ var formatDates = function(entities) {
   entities.forEach(function(entity) {
 
     // check http://momentjs.com/docs/#/displaying/
-    entity.created_at = moment(entity.created_at).format("ddd MMM Do YY, h:mma");
+    entity.created_at = moment(Date.parse(entity.created_at)).format("ddd MMM Do YY, h:mma");
   });
+}
+
+/*******************************************************************************
+* helper method for marking top tweet(s) with highest retweet + favourite count
+* with a top_tweet: true property
+*******************************************************************************/
+
+var markTopTweets = function(tweets) {
+  var topCount = 0;
+  var topIndices = [];
+  tweets.forEach(function(tweet, index) {
+    var thisCount = tweet.retweet_count + tweet.favorite_count;
+    if (thisCount > topCount) {
+      topCount = thisCount;
+      topIndices = [index];
+    } else if (thisCount == topCount) {
+      topIndices.push(index);
+    }
+  });
+  topIndices.forEach(function(topIndex) {
+    tweets[topIndex].top_tweet = true;
+  })
 }
 
 /*******************************************************************************
@@ -226,7 +248,10 @@ router.post("/tweets", function(req, res) {
   client.get("statuses/user_timeline", params, function (error, data, response) {
     if (!error) {
       console.log(data);
+
       formatDates(data);
+      markTopTweets(data);
+
       res.render("main/tweets", {user_id: req.body.user_id, tweets: data});
     } else {
       res.send("Error:", error);

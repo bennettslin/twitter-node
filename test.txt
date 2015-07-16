@@ -1,1 +1,3826 @@
-manually make an API call
+{
+  "statuses":  [
+     {
+      "metadata":  {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "created_at": "Wed Jul 15 20:01:31 +0000 2015",
+      "id": 621409276419002400,
+      "id_str": "621409276419002368",
+      "text": "Hello #HumanDiversity #Glasses, tools for the workshop at @ccemx #MexicoDF #Inclusivedesign #designforall http://t.co/DiVVKDgM6H",
+      "source": "<a href="http://www.hootsuite.com" rel="nofollow">Hootsuite</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user":  {
+        "id": 11193872,
+        "id_str": "11193872",
+        "name": "Avanti-Avanti Studio",
+        "screen_name": "avantiavanti",
+        "location": "Barcelona",
+        "description": "Somos un estudio creativo de Barcelona especializado en #Diseñoparatodos / We are a Barcelona-based creative\r\nstudio specialized in #Designforall",
+        "url": "http://t.co/Ebgg6Y9MBH",
+        "entities":  {
+          "url":  {
+            "urls":  [
+               {
+                "url": "http://t.co/Ebgg6Y9MBH",
+                "expanded_url": "http://es.avanti-avanti.com/",
+                "display_url": "es.avanti-avanti.com",
+                "indices":  [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description":  {
+            "urls":  []
+          }
+        },
+        "protected": false,
+        "followers_count": 559,
+        "friends_count": 1066,
+        "listed_count": 23,
+        "created_at": "Sat Dec 15 12:03:49 +0000 2007",
+        "favourites_count": 216,
+        "utc_offset": 7200,
+        "time_zone": "Madrid",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 833,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "FFFFFF",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/1904092/background.gif",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/1904092/background.gif",
+        "profile_background_tile": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/3585533841/f0f6ce714cad73cff8410579693e49c4_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/3585533841/f0f6ce714cad73cff8410579693e49c4_normal.jpeg",
+        "profile_link_color": "999999",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "FFFFFF",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "entities":  {
+        "hashtags":  [
+           {
+            "text": "HumanDiversity",
+            "indices":  [
+              6,
+              21
+            ]
+          },
+           {
+            "text": "Glasses",
+            "indices":  [
+              22,
+              30
+            ]
+          },
+           {
+            "text": "MexicoDF",
+            "indices":  [
+              65,
+              74
+            ]
+          },
+           {
+            "text": "Inclusivedesign",
+            "indices":  [
+              75,
+              91
+            ]
+          },
+           {
+            "text": "designforall",
+            "indices":  [
+              92,
+              105
+            ]
+          }
+        ],
+        "symbols":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "ccemx",
+            "name": "Centro Cult España",
+            "id": 102835920,
+            "id_str": "102835920",
+            "indices":  [
+              58,
+              64
+            ]
+          }
+        ],
+        "urls":  [
+           {
+            "url": "http://t.co/DiVVKDgM6H",
+            "expanded_url": "http://ow.ly/i/bPsbk",
+            "display_url": "ow.ly/i/bPsbk",
+            "indices":  [
+              106,
+              128
+            ]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+     {
+      "metadata":  {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "created_at": "Wed Jul 15 19:37:06 +0000 2015",
+      "id": 621403131960758300,
+      "id_str": "621403131960758272",
+      "text": "RT @mpaciello: RT @3playmedia: Tips for Making Web #Video & Audio Accessible http://t.co/BBAd9Rc9HF #WCAG #inclusivedesign #ux #a11y http:/…",
+      "source": "<a href="http://twitter.com/#!/download/ipad" rel="nofollow">Twitter for iPad</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user":  {
+        "id": 19533322,
+        "id_str": "19533322",
+        "name": "Abi James",
+        "screen_name": "abijames",
+        "location": "UK",
+        "description": "Assistive technologist specialising in tech innovation & accessibility for dyslexia. Chair http://t.co/lzmHJqWy5K & STEMReader project lead",
+        "url": null,
+        "entities":  {
+          "description":  {
+            "urls":  [
+               {
+                "url": "http://t.co/lzmHJqWy5K",
+                "expanded_url": "http://BDAtech.org",
+                "display_url": "BDAtech.org",
+                "indices":  [
+                  92,
+                  114
+                ]
+              }
+            ]
+          }
+        },
+        "protected": false,
+        "followers_count": 508,
+        "friends_count": 677,
+        "listed_count": 28,
+        "created_at": "Mon Jan 26 13:20:38 +0000 2009",
+        "favourites_count": 44,
+        "utc_offset": 3600,
+        "time_zone": "London",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 493,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "EDECE9",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme3/bg.gif",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme3/bg.gif",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/2268887592/br5ggv99oz7lh9tqvshz_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/2268887592/br5ggv99oz7lh9tqvshz_normal.jpeg",
+        "profile_link_color": "4A913C",
+        "profile_sidebar_border_color": "D9B17E",
+        "profile_sidebar_fill_color": "EADEAA",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status":  {
+        "metadata":  {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "created_at": "Wed Jul 15 19:06:12 +0000 2015",
+        "id": 621395357700890600,
+        "id_str": "621395357700890624",
+        "text": "RT @3playmedia: Tips for Making Web #Video & Audio Accessible http://t.co/BBAd9Rc9HF #WCAG #inclusivedesign #ux #a11y http://t.co/0L6VoNTEu2",
+        "source": "<a href="http://www.hootsuite.com" rel="nofollow">Hootsuite</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user":  {
+          "id": 11465442,
+          "id_str": "11465442",
+          "name": "Mike Paciello",
+          "screen_name": "mpaciello",
+          "location": "ÜT: 42.669297,-71.431611",
+          "description": "Founder, The Paciello Group (TPG)",
+          "url": "http://t.co/33Gke0QA6v",
+          "entities":  {
+            "url":  {
+              "urls":  [
+                 {
+                  "url": "http://t.co/33Gke0QA6v",
+                  "expanded_url": "http://www.paciellogroup.com/",
+                  "display_url": "paciellogroup.com",
+                  "indices":  [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description":  {
+              "urls":  []
+            }
+          },
+          "protected": false,
+          "followers_count": 4073,
+          "friends_count": 721,
+          "listed_count": 393,
+          "created_at": "Mon Dec 24 00:50:47 +0000 2007",
+          "favourites_count": 54,
+          "utc_offset": -14400,
+          "time_zone": "Eastern Time (US & Canada)",
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 15904,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "EDECE9",
+          "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/5065485/new_cd_TPG_image.jpg",
+          "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/5065485/new_cd_TPG_image.jpg",
+          "profile_background_tile": true,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/3699669868/e24c919a9f6f99e208fae004fdec59cf_normal.jpeg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/3699669868/e24c919a9f6f99e208fae004fdec59cf_normal.jpeg",
+          "profile_link_color": "088253",
+          "profile_sidebar_border_color": "D3D2CF",
+          "profile_sidebar_fill_color": "E3E2DE",
+          "profile_text_color": "634047",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 3,
+        "favorite_count": 5,
+        "entities":  {
+          "hashtags":  [
+             {
+              "text": "Video",
+              "indices":  [
+                36,
+                42
+              ]
+            },
+             {
+              "text": "WCAG",
+              "indices":  [
+                89,
+                94
+              ]
+            },
+             {
+              "text": "inclusivedesign",
+              "indices":  [
+                95,
+                111
+              ]
+            },
+             {
+              "text": "ux",
+              "indices":  [
+                112,
+                115
+              ]
+            },
+             {
+              "text": "a11y",
+              "indices":  [
+                116,
+                121
+              ]
+            }
+          ],
+          "symbols":  [],
+          "user_mentions":  [
+             {
+              "screen_name": "3playmedia",
+              "name": "3Play Media",
+              "id": 24835223,
+              "id_str": "24835223",
+              "indices":  [
+                3,
+                14
+              ]
+            }
+          ],
+          "urls":  [
+             {
+              "url": "http://t.co/BBAd9Rc9HF",
+              "expanded_url": "http://bit.ly/1fDwBrQ",
+              "display_url": "bit.ly/1fDwBrQ",
+              "indices":  [
+                66,
+                88
+              ]
+            }
+          ],
+          "media":  [
+             {
+              "id": 621002250316566500,
+              "id_str": "621002250316566529",
+              "indices":  [
+                122,
+                144
+              ],
+              "media_url": "http://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+              "url": "http://t.co/0L6VoNTEu2",
+              "display_url": "pic.twitter.com/0L6VoNTEu2",
+              "expanded_url": "http://twitter.com/3playmedia/status/621002250387914753/photo/1",
+              "type": "photo",
+              "sizes":  {
+                "thumb":  {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium":  {
+                  "w": 600,
+                  "h": 323,
+                  "resize": "fit"
+                },
+                "large":  {
+                  "w": 650,
+                  "h": 350,
+                  "resize": "fit"
+                },
+                "small":  {
+                  "w": 340,
+                  "h": 183,
+                  "resize": "fit"
+                }
+              },
+              "source_status_id": 621002250387914800,
+              "source_status_id_str": "621002250387914753",
+              "source_user_id": 24835223,
+              "source_user_id_str": "24835223"
+            }
+          ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "is_quote_status": false,
+      "retweet_count": 3,
+      "favorite_count": 0,
+      "entities":  {
+        "hashtags":  [
+           {
+            "text": "Video",
+            "indices":  [
+              51,
+              57
+            ]
+          },
+           {
+            "text": "WCAG",
+            "indices":  [
+              104,
+              109
+            ]
+          },
+           {
+            "text": "inclusivedesign",
+            "indices":  [
+              110,
+              126
+            ]
+          },
+           {
+            "text": "ux",
+            "indices":  [
+              127,
+              130
+            ]
+          },
+           {
+            "text": "a11y",
+            "indices":  [
+              131,
+              136
+            ]
+          }
+        ],
+        "symbols":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "mpaciello",
+            "name": "Mike Paciello",
+            "id": 11465442,
+            "id_str": "11465442",
+            "indices":  [
+              3,
+              13
+            ]
+          },
+           {
+            "screen_name": "3playmedia",
+            "name": "3Play Media",
+            "id": 24835223,
+            "id_str": "24835223",
+            "indices":  [
+              18,
+              29
+            ]
+          }
+        ],
+        "urls":  [
+           {
+            "url": "http://t.co/BBAd9Rc9HF",
+            "expanded_url": "http://bit.ly/1fDwBrQ",
+            "display_url": "bit.ly/1fDwBrQ",
+            "indices":  [
+              81,
+              103
+            ]
+          }
+        ],
+        "media":  [
+           {
+            "id": 621002250316566500,
+            "id_str": "621002250316566529",
+            "indices":  [
+              143,
+              144
+            ],
+            "media_url": "http://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+            "url": "http://t.co/0L6VoNTEu2",
+            "display_url": "pic.twitter.com/0L6VoNTEu2",
+            "expanded_url": "http://twitter.com/3playmedia/status/621002250387914753/photo/1",
+            "type": "photo",
+            "sizes":  {
+              "thumb":  {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium":  {
+                "w": 600,
+                "h": 323,
+                "resize": "fit"
+              },
+              "large":  {
+                "w": 650,
+                "h": 350,
+                "resize": "fit"
+              },
+              "small":  {
+                "w": 340,
+                "h": 183,
+                "resize": "fit"
+              }
+            },
+            "source_status_id": 621002250387914800,
+            "source_status_id_str": "621002250387914753",
+            "source_user_id": 24835223,
+            "source_user_id_str": "24835223"
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+     {
+      "metadata":  {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "created_at": "Wed Jul 15 19:13:04 +0000 2015",
+      "id": 621397084541952000,
+      "id_str": "621397084541952000",
+      "text": "RT @mpaciello: RT @3playmedia: Tips for Making Web #Video & Audio Accessible http://t.co/BBAd9Rc9HF #WCAG #inclusivedesign #ux #a11y http:/…",
+      "source": "<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user":  {
+        "id": 9460442,
+        "id_str": "9460442",
+        "name": "Steve Grobschmidt",
+        "screen_name": "sgrobschmidt",
+        "location": "Milwaukee, WI",
+        "description": "User Experience Lead; Web Accessibility Blogger and Consultant; Composting Enthusiast; Amateur Birder",
+        "url": "http://t.co/8YvcNGJ9pE",
+        "entities":  {
+          "url":  {
+            "urls":  [
+               {
+                "url": "http://t.co/8YvcNGJ9pE",
+                "expanded_url": "http://www.theaccessibility.com/",
+                "display_url": "theaccessibility.com",
+                "indices":  [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description":  {
+            "urls":  []
+          }
+        },
+        "protected": false,
+        "followers_count": 867,
+        "friends_count": 230,
+        "listed_count": 135,
+        "created_at": "Mon Oct 15 18:22:39 +0000 2007",
+        "favourites_count": 4,
+        "utc_offset": -18000,
+        "time_zone": "Central Time (US & Canada)",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 3083,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "342005",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/10504352/access-bg.gif",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/10504352/access-bg.gif",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/617384586/-1_1256356241627_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/617384586/-1_1256356241627_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/9460442/1367612093",
+        "profile_link_color": "AA2B0E",
+        "profile_sidebar_border_color": "FF991F",
+        "profile_sidebar_fill_color": "DEDDD9",
+        "profile_text_color": "342005",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status":  {
+        "metadata":  {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "created_at": "Wed Jul 15 19:06:12 +0000 2015",
+        "id": 621395357700890600,
+        "id_str": "621395357700890624",
+        "text": "RT @3playmedia: Tips for Making Web #Video & Audio Accessible http://t.co/BBAd9Rc9HF #WCAG #inclusivedesign #ux #a11y http://t.co/0L6VoNTEu2",
+        "source": "<a href="http://www.hootsuite.com" rel="nofollow">Hootsuite</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user":  {
+          "id": 11465442,
+          "id_str": "11465442",
+          "name": "Mike Paciello",
+          "screen_name": "mpaciello",
+          "location": "ÜT: 42.669297,-71.431611",
+          "description": "Founder, The Paciello Group (TPG)",
+          "url": "http://t.co/33Gke0QA6v",
+          "entities":  {
+            "url":  {
+              "urls":  [
+                 {
+                  "url": "http://t.co/33Gke0QA6v",
+                  "expanded_url": "http://www.paciellogroup.com/",
+                  "display_url": "paciellogroup.com",
+                  "indices":  [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description":  {
+              "urls":  []
+            }
+          },
+          "protected": false,
+          "followers_count": 4073,
+          "friends_count": 721,
+          "listed_count": 393,
+          "created_at": "Mon Dec 24 00:50:47 +0000 2007",
+          "favourites_count": 54,
+          "utc_offset": -14400,
+          "time_zone": "Eastern Time (US & Canada)",
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 15904,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "EDECE9",
+          "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/5065485/new_cd_TPG_image.jpg",
+          "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/5065485/new_cd_TPG_image.jpg",
+          "profile_background_tile": true,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/3699669868/e24c919a9f6f99e208fae004fdec59cf_normal.jpeg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/3699669868/e24c919a9f6f99e208fae004fdec59cf_normal.jpeg",
+          "profile_link_color": "088253",
+          "profile_sidebar_border_color": "D3D2CF",
+          "profile_sidebar_fill_color": "E3E2DE",
+          "profile_text_color": "634047",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 3,
+        "favorite_count": 5,
+        "entities":  {
+          "hashtags":  [
+             {
+              "text": "Video",
+              "indices":  [
+                36,
+                42
+              ]
+            },
+             {
+              "text": "WCAG",
+              "indices":  [
+                89,
+                94
+              ]
+            },
+             {
+              "text": "inclusivedesign",
+              "indices":  [
+                95,
+                111
+              ]
+            },
+             {
+              "text": "ux",
+              "indices":  [
+                112,
+                115
+              ]
+            },
+             {
+              "text": "a11y",
+              "indices":  [
+                116,
+                121
+              ]
+            }
+          ],
+          "symbols":  [],
+          "user_mentions":  [
+             {
+              "screen_name": "3playmedia",
+              "name": "3Play Media",
+              "id": 24835223,
+              "id_str": "24835223",
+              "indices":  [
+                3,
+                14
+              ]
+            }
+          ],
+          "urls":  [
+             {
+              "url": "http://t.co/BBAd9Rc9HF",
+              "expanded_url": "http://bit.ly/1fDwBrQ",
+              "display_url": "bit.ly/1fDwBrQ",
+              "indices":  [
+                66,
+                88
+              ]
+            }
+          ],
+          "media":  [
+             {
+              "id": 621002250316566500,
+              "id_str": "621002250316566529",
+              "indices":  [
+                122,
+                144
+              ],
+              "media_url": "http://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+              "url": "http://t.co/0L6VoNTEu2",
+              "display_url": "pic.twitter.com/0L6VoNTEu2",
+              "expanded_url": "http://twitter.com/3playmedia/status/621002250387914753/photo/1",
+              "type": "photo",
+              "sizes":  {
+                "thumb":  {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium":  {
+                  "w": 600,
+                  "h": 323,
+                  "resize": "fit"
+                },
+                "large":  {
+                  "w": 650,
+                  "h": 350,
+                  "resize": "fit"
+                },
+                "small":  {
+                  "w": 340,
+                  "h": 183,
+                  "resize": "fit"
+                }
+              },
+              "source_status_id": 621002250387914800,
+              "source_status_id_str": "621002250387914753",
+              "source_user_id": 24835223,
+              "source_user_id_str": "24835223"
+            }
+          ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "is_quote_status": false,
+      "retweet_count": 3,
+      "favorite_count": 0,
+      "entities":  {
+        "hashtags":  [
+           {
+            "text": "Video",
+            "indices":  [
+              51,
+              57
+            ]
+          },
+           {
+            "text": "WCAG",
+            "indices":  [
+              104,
+              109
+            ]
+          },
+           {
+            "text": "inclusivedesign",
+            "indices":  [
+              110,
+              126
+            ]
+          },
+           {
+            "text": "ux",
+            "indices":  [
+              127,
+              130
+            ]
+          },
+           {
+            "text": "a11y",
+            "indices":  [
+              131,
+              136
+            ]
+          }
+        ],
+        "symbols":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "mpaciello",
+            "name": "Mike Paciello",
+            "id": 11465442,
+            "id_str": "11465442",
+            "indices":  [
+              3,
+              13
+            ]
+          },
+           {
+            "screen_name": "3playmedia",
+            "name": "3Play Media",
+            "id": 24835223,
+            "id_str": "24835223",
+            "indices":  [
+              18,
+              29
+            ]
+          }
+        ],
+        "urls":  [
+           {
+            "url": "http://t.co/BBAd9Rc9HF",
+            "expanded_url": "http://bit.ly/1fDwBrQ",
+            "display_url": "bit.ly/1fDwBrQ",
+            "indices":  [
+              81,
+              103
+            ]
+          }
+        ],
+        "media":  [
+           {
+            "id": 621002250316566500,
+            "id_str": "621002250316566529",
+            "indices":  [
+              143,
+              144
+            ],
+            "media_url": "http://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+            "url": "http://t.co/0L6VoNTEu2",
+            "display_url": "pic.twitter.com/0L6VoNTEu2",
+            "expanded_url": "http://twitter.com/3playmedia/status/621002250387914753/photo/1",
+            "type": "photo",
+            "sizes":  {
+              "thumb":  {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium":  {
+                "w": 600,
+                "h": 323,
+                "resize": "fit"
+              },
+              "large":  {
+                "w": 650,
+                "h": 350,
+                "resize": "fit"
+              },
+              "small":  {
+                "w": 340,
+                "h": 183,
+                "resize": "fit"
+              }
+            },
+            "source_status_id": 621002250387914800,
+            "source_status_id_str": "621002250387914753",
+            "source_user_id": 24835223,
+            "source_user_id_str": "24835223"
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+     {
+      "metadata":  {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "created_at": "Wed Jul 15 19:06:51 +0000 2015",
+      "id": 621395520347598800,
+      "id_str": "621395520347598848",
+      "text": "RT @mpaciello: RT @3playmedia: Tips for Making Web #Video & Audio Accessible http://t.co/BBAd9Rc9HF #WCAG #inclusivedesign #ux #a11y http:/…",
+      "source": "<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user":  {
+        "id": 229468736,
+        "id_str": "229468736",
+        "name": "OpenConcept - Drupal",
+        "screen_name": "openconcept_ca",
+        "location": "Ottawa, ON",
+        "description": "Twitter feed for OpenConcept Consulting Inc. Certified @BCorporation. #Accessibility, Security & Advocacy with #Drupal!",
+        "url": "http://t.co/fPnZhhipFx",
+        "entities":  {
+          "url":  {
+            "urls":  [
+               {
+                "url": "http://t.co/fPnZhhipFx",
+                "expanded_url": "http://openconcept.ca",
+                "display_url": "openconcept.ca",
+                "indices":  [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description":  {
+            "urls":  []
+          }
+        },
+        "protected": false,
+        "followers_count": 321,
+        "friends_count": 1039,
+        "listed_count": 41,
+        "created_at": "Wed Dec 22 13:41:32 +0000 2010",
+        "favourites_count": 109,
+        "utc_offset": -14400,
+        "time_zone": "Eastern Time (US & Canada)",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 631,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/522770356654731264/kaS8uv06_normal.png",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/522770356654731264/kaS8uv06_normal.png",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/229468736/1404503744",
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status":  {
+        "metadata":  {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "created_at": "Wed Jul 15 19:06:12 +0000 2015",
+        "id": 621395357700890600,
+        "id_str": "621395357700890624",
+        "text": "RT @3playmedia: Tips for Making Web #Video & Audio Accessible http://t.co/BBAd9Rc9HF #WCAG #inclusivedesign #ux #a11y http://t.co/0L6VoNTEu2",
+        "source": "<a href="http://www.hootsuite.com" rel="nofollow">Hootsuite</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user":  {
+          "id": 11465442,
+          "id_str": "11465442",
+          "name": "Mike Paciello",
+          "screen_name": "mpaciello",
+          "location": "ÜT: 42.669297,-71.431611",
+          "description": "Founder, The Paciello Group (TPG)",
+          "url": "http://t.co/33Gke0QA6v",
+          "entities":  {
+            "url":  {
+              "urls":  [
+                 {
+                  "url": "http://t.co/33Gke0QA6v",
+                  "expanded_url": "http://www.paciellogroup.com/",
+                  "display_url": "paciellogroup.com",
+                  "indices":  [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description":  {
+              "urls":  []
+            }
+          },
+          "protected": false,
+          "followers_count": 4073,
+          "friends_count": 721,
+          "listed_count": 393,
+          "created_at": "Mon Dec 24 00:50:47 +0000 2007",
+          "favourites_count": 54,
+          "utc_offset": -14400,
+          "time_zone": "Eastern Time (US & Canada)",
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 15904,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "EDECE9",
+          "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/5065485/new_cd_TPG_image.jpg",
+          "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/5065485/new_cd_TPG_image.jpg",
+          "profile_background_tile": true,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/3699669868/e24c919a9f6f99e208fae004fdec59cf_normal.jpeg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/3699669868/e24c919a9f6f99e208fae004fdec59cf_normal.jpeg",
+          "profile_link_color": "088253",
+          "profile_sidebar_border_color": "D3D2CF",
+          "profile_sidebar_fill_color": "E3E2DE",
+          "profile_text_color": "634047",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 3,
+        "favorite_count": 5,
+        "entities":  {
+          "hashtags":  [
+             {
+              "text": "Video",
+              "indices":  [
+                36,
+                42
+              ]
+            },
+             {
+              "text": "WCAG",
+              "indices":  [
+                89,
+                94
+              ]
+            },
+             {
+              "text": "inclusivedesign",
+              "indices":  [
+                95,
+                111
+              ]
+            },
+             {
+              "text": "ux",
+              "indices":  [
+                112,
+                115
+              ]
+            },
+             {
+              "text": "a11y",
+              "indices":  [
+                116,
+                121
+              ]
+            }
+          ],
+          "symbols":  [],
+          "user_mentions":  [
+             {
+              "screen_name": "3playmedia",
+              "name": "3Play Media",
+              "id": 24835223,
+              "id_str": "24835223",
+              "indices":  [
+                3,
+                14
+              ]
+            }
+          ],
+          "urls":  [
+             {
+              "url": "http://t.co/BBAd9Rc9HF",
+              "expanded_url": "http://bit.ly/1fDwBrQ",
+              "display_url": "bit.ly/1fDwBrQ",
+              "indices":  [
+                66,
+                88
+              ]
+            }
+          ],
+          "media":  [
+             {
+              "id": 621002250316566500,
+              "id_str": "621002250316566529",
+              "indices":  [
+                122,
+                144
+              ],
+              "media_url": "http://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+              "url": "http://t.co/0L6VoNTEu2",
+              "display_url": "pic.twitter.com/0L6VoNTEu2",
+              "expanded_url": "http://twitter.com/3playmedia/status/621002250387914753/photo/1",
+              "type": "photo",
+              "sizes":  {
+                "thumb":  {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium":  {
+                  "w": 600,
+                  "h": 323,
+                  "resize": "fit"
+                },
+                "large":  {
+                  "w": 650,
+                  "h": 350,
+                  "resize": "fit"
+                },
+                "small":  {
+                  "w": 340,
+                  "h": 183,
+                  "resize": "fit"
+                }
+              },
+              "source_status_id": 621002250387914800,
+              "source_status_id_str": "621002250387914753",
+              "source_user_id": 24835223,
+              "source_user_id_str": "24835223"
+            }
+          ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "is_quote_status": false,
+      "retweet_count": 3,
+      "favorite_count": 0,
+      "entities":  {
+        "hashtags":  [
+           {
+            "text": "Video",
+            "indices":  [
+              51,
+              57
+            ]
+          },
+           {
+            "text": "WCAG",
+            "indices":  [
+              104,
+              109
+            ]
+          },
+           {
+            "text": "inclusivedesign",
+            "indices":  [
+              110,
+              126
+            ]
+          },
+           {
+            "text": "ux",
+            "indices":  [
+              127,
+              130
+            ]
+          },
+           {
+            "text": "a11y",
+            "indices":  [
+              131,
+              136
+            ]
+          }
+        ],
+        "symbols":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "mpaciello",
+            "name": "Mike Paciello",
+            "id": 11465442,
+            "id_str": "11465442",
+            "indices":  [
+              3,
+              13
+            ]
+          },
+           {
+            "screen_name": "3playmedia",
+            "name": "3Play Media",
+            "id": 24835223,
+            "id_str": "24835223",
+            "indices":  [
+              18,
+              29
+            ]
+          }
+        ],
+        "urls":  [
+           {
+            "url": "http://t.co/BBAd9Rc9HF",
+            "expanded_url": "http://bit.ly/1fDwBrQ",
+            "display_url": "bit.ly/1fDwBrQ",
+            "indices":  [
+              81,
+              103
+            ]
+          }
+        ],
+        "media":  [
+           {
+            "id": 621002250316566500,
+            "id_str": "621002250316566529",
+            "indices":  [
+              143,
+              144
+            ],
+            "media_url": "http://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+            "url": "http://t.co/0L6VoNTEu2",
+            "display_url": "pic.twitter.com/0L6VoNTEu2",
+            "expanded_url": "http://twitter.com/3playmedia/status/621002250387914753/photo/1",
+            "type": "photo",
+            "sizes":  {
+              "thumb":  {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium":  {
+                "w": 600,
+                "h": 323,
+                "resize": "fit"
+              },
+              "large":  {
+                "w": 650,
+                "h": 350,
+                "resize": "fit"
+              },
+              "small":  {
+                "w": 340,
+                "h": 183,
+                "resize": "fit"
+              }
+            },
+            "source_status_id": 621002250387914800,
+            "source_status_id_str": "621002250387914753",
+            "source_user_id": 24835223,
+            "source_user_id_str": "24835223"
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+     {
+      "metadata":  {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "created_at": "Wed Jul 15 19:06:12 +0000 2015",
+      "id": 621395357700890600,
+      "id_str": "621395357700890624",
+      "text": "RT @3playmedia: Tips for Making Web #Video & Audio Accessible http://t.co/BBAd9Rc9HF #WCAG #inclusivedesign #ux #a11y http://t.co/0L6VoNTEu2",
+      "source": "<a href="http://www.hootsuite.com" rel="nofollow">Hootsuite</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user":  {
+        "id": 11465442,
+        "id_str": "11465442",
+        "name": "Mike Paciello",
+        "screen_name": "mpaciello",
+        "location": "ÜT: 42.669297,-71.431611",
+        "description": "Founder, The Paciello Group (TPG)",
+        "url": "http://t.co/33Gke0QA6v",
+        "entities":  {
+          "url":  {
+            "urls":  [
+               {
+                "url": "http://t.co/33Gke0QA6v",
+                "expanded_url": "http://www.paciellogroup.com/",
+                "display_url": "paciellogroup.com",
+                "indices":  [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description":  {
+            "urls":  []
+          }
+        },
+        "protected": false,
+        "followers_count": 4073,
+        "friends_count": 721,
+        "listed_count": 393,
+        "created_at": "Mon Dec 24 00:50:47 +0000 2007",
+        "favourites_count": 54,
+        "utc_offset": -14400,
+        "time_zone": "Eastern Time (US & Canada)",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 15904,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "EDECE9",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/5065485/new_cd_TPG_image.jpg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/5065485/new_cd_TPG_image.jpg",
+        "profile_background_tile": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/3699669868/e24c919a9f6f99e208fae004fdec59cf_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/3699669868/e24c919a9f6f99e208fae004fdec59cf_normal.jpeg",
+        "profile_link_color": "088253",
+        "profile_sidebar_border_color": "D3D2CF",
+        "profile_sidebar_fill_color": "E3E2DE",
+        "profile_text_color": "634047",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 3,
+      "favorite_count": 5,
+      "entities":  {
+        "hashtags":  [
+           {
+            "text": "Video",
+            "indices":  [
+              36,
+              42
+            ]
+          },
+           {
+            "text": "WCAG",
+            "indices":  [
+              89,
+              94
+            ]
+          },
+           {
+            "text": "inclusivedesign",
+            "indices":  [
+              95,
+              111
+            ]
+          },
+           {
+            "text": "ux",
+            "indices":  [
+              112,
+              115
+            ]
+          },
+           {
+            "text": "a11y",
+            "indices":  [
+              116,
+              121
+            ]
+          }
+        ],
+        "symbols":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "3playmedia",
+            "name": "3Play Media",
+            "id": 24835223,
+            "id_str": "24835223",
+            "indices":  [
+              3,
+              14
+            ]
+          }
+        ],
+        "urls":  [
+           {
+            "url": "http://t.co/BBAd9Rc9HF",
+            "expanded_url": "http://bit.ly/1fDwBrQ",
+            "display_url": "bit.ly/1fDwBrQ",
+            "indices":  [
+              66,
+              88
+            ]
+          }
+        ],
+        "media":  [
+           {
+            "id": 621002250316566500,
+            "id_str": "621002250316566529",
+            "indices":  [
+              122,
+              144
+            ],
+            "media_url": "http://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+            "url": "http://t.co/0L6VoNTEu2",
+            "display_url": "pic.twitter.com/0L6VoNTEu2",
+            "expanded_url": "http://twitter.com/3playmedia/status/621002250387914753/photo/1",
+            "type": "photo",
+            "sizes":  {
+              "thumb":  {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium":  {
+                "w": 600,
+                "h": 323,
+                "resize": "fit"
+              },
+              "large":  {
+                "w": 650,
+                "h": 350,
+                "resize": "fit"
+              },
+              "small":  {
+                "w": 340,
+                "h": 183,
+                "resize": "fit"
+              }
+            },
+            "source_status_id": 621002250387914800,
+            "source_status_id_str": "621002250387914753",
+            "source_user_id": 24835223,
+            "source_user_id_str": "24835223"
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+     {
+      "metadata":  {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "created_at": "Wed Jul 15 19:06:12 +0000 2015",
+      "id": 621395357113675800,
+      "id_str": "621395357113675776",
+      "text": "RT @3playmedia: Tips for Making Web #Video & Audio Accessible http://t.co/FVh61n3Ut7 #WCAG #inclusivedesign #ux #a11y http://t.co/WHX1o6gsfW",
+      "source": "<a href="http://www.hootsuite.com" rel="nofollow">Hootsuite</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user":  {
+        "id": 18923531,
+        "id_str": "18923531",
+        "name": "The Paciello Group",
+        "screen_name": "paciellogroup",
+        "location": "Nashua, NH",
+        "description": "The Paciello Group (TPG) - Your Accessibility Partner - #a11y testing/evaluation, WCAG/Section 508 compliance audits, VPATs, training, accessible UX",
+        "url": "http://t.co/RVqnSadw5M",
+        "entities":  {
+          "url":  {
+            "urls":  [
+               {
+                "url": "http://t.co/RVqnSadw5M",
+                "expanded_url": "http://www.paciellogroup.com/",
+                "display_url": "paciellogroup.com",
+                "indices":  [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description":  {
+            "urls":  []
+          }
+        },
+        "protected": false,
+        "followers_count": 1020,
+        "friends_count": 87,
+        "listed_count": 135,
+        "created_at": "Tue Jan 13 01:26:20 +0000 2009",
+        "favourites_count": 7,
+        "utc_offset": -14400,
+        "time_zone": "Eastern Time (US & Canada)",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 4265,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/557187609110118400/ZYIiZ5r4_normal.png",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/557187609110118400/ZYIiZ5r4_normal.png",
+        "profile_link_color": "1D76BC",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 4,
+      "entities":  {
+        "hashtags":  [
+           {
+            "text": "Video",
+            "indices":  [
+              36,
+              42
+            ]
+          },
+           {
+            "text": "WCAG",
+            "indices":  [
+              89,
+              94
+            ]
+          },
+           {
+            "text": "inclusivedesign",
+            "indices":  [
+              95,
+              111
+            ]
+          },
+           {
+            "text": "ux",
+            "indices":  [
+              112,
+              115
+            ]
+          },
+           {
+            "text": "a11y",
+            "indices":  [
+              116,
+              121
+            ]
+          }
+        ],
+        "symbols":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "3playmedia",
+            "name": "3Play Media",
+            "id": 24835223,
+            "id_str": "24835223",
+            "indices":  [
+              3,
+              14
+            ]
+          }
+        ],
+        "urls":  [
+           {
+            "url": "http://t.co/FVh61n3Ut7",
+            "expanded_url": "http://bit.ly/1fDwBrQ",
+            "display_url": "bit.ly/1fDwBrQ",
+            "indices":  [
+              66,
+              88
+            ]
+          }
+        ],
+        "media":  [
+           {
+            "id": 621002250316566500,
+            "id_str": "621002250316566529",
+            "indices":  [
+              122,
+              144
+            ],
+            "media_url": "http://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CJ4-QabWUAEowyb.jpg",
+            "url": "http://t.co/WHX1o6gsfW",
+            "display_url": "pic.twitter.com/WHX1o6gsfW",
+            "expanded_url": "http://twitter.com/3playmedia/status/621002250387914753/photo/1",
+            "type": "photo",
+            "sizes":  {
+              "thumb":  {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium":  {
+                "w": 600,
+                "h": 323,
+                "resize": "fit"
+              },
+              "large":  {
+                "w": 650,
+                "h": 350,
+                "resize": "fit"
+              },
+              "small":  {
+                "w": 340,
+                "h": 183,
+                "resize": "fit"
+              }
+            },
+            "source_status_id": 621002250387914800,
+            "source_status_id_str": "621002250387914753",
+            "source_user_id": 24835223,
+            "source_user_id_str": "24835223"
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+     {
+      "metadata":  {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "created_at": "Wed Jul 15 17:13:04 +0000 2015",
+      "id": 621366886052286500,
+      "id_str": "621366886052286464",
+      "text": "RT @MicrosoftDesign: #InclusiveDesign starts with humans and ends with accessibility. http://t.co/GE22yjp87W",
+      "source": "<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user":  {
+        "id": 23562295,
+        "id_str": "23562295",
+        "name": "Ali Daneshmandi",
+        "screen_name": "daneshmandi",
+        "location": "Montreal, Canada",
+        "description": "C# | XAML | WP8 | Windows Store | WPF | Xamarin | Passionate about UX & UI",
+        "url": "http://t.co/m761ZR1jKh",
+        "entities":  {
+          "url":  {
+            "urls":  [
+               {
+                "url": "http://t.co/m761ZR1jKh",
+                "expanded_url": "http://daneshmandi.com",
+                "display_url": "daneshmandi.com",
+                "indices":  [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description":  {
+            "urls":  []
+          }
+        },
+        "protected": false,
+        "followers_count": 254,
+        "friends_count": 150,
+        "listed_count": 16,
+        "created_at": "Tue Mar 10 05:49:02 +0000 2009",
+        "favourites_count": 280,
+        "utc_offset": -14400,
+        "time_zone": "Eastern Time (US & Canada)",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 1887,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "131516",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+        "profile_background_tile": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/475081275368165376/pqdB0qzd_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/475081275368165376/pqdB0qzd_normal.jpeg",
+        "profile_link_color": "009999",
+        "profile_sidebar_border_color": "EEEEEE",
+        "profile_sidebar_fill_color": "EFEFEF",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status":  {
+        "metadata":  {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "created_at": "Wed Jul 15 02:49:59 +0000 2015",
+        "id": 621149684799770600,
+        "id_str": "621149684799770624",
+        "text": "#InclusiveDesign starts with humans and ends with accessibility. http://t.co/GE22yjp87W",
+        "source": "<a href="http://www.crowdbooster.com" rel="nofollow">Crowdbooster</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user":  {
+          "id": 209202416,
+          "id_str": "209202416",
+          "name": "Microsoft Design",
+          "screen_name": "MicrosoftDesign",
+          "location": "",
+          "description": "The official Twitter for Microsoft Design and a community for designers.",
+          "url": null,
+          "entities":  {
+            "description":  {
+              "urls":  []
+            }
+          },
+          "protected": false,
+          "followers_count": 97993,
+          "friends_count": 124,
+          "listed_count": 955,
+          "created_at": "Thu Oct 28 18:26:02 +0000 2010",
+          "favourites_count": 335,
+          "utc_offset": -25200,
+          "time_zone": "Pacific Time (US & Canada)",
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 1477,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "FFFFFF",
+          "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/166072070/wp_design_background.jpg",
+          "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/166072070/wp_design_background.jpg",
+          "profile_background_tile": true,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/572517851634741248/d0wdg64T_normal.png",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/572517851634741248/d0wdg64T_normal.png",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/209202416/1421868847",
+          "profile_link_color": "339933",
+          "profile_sidebar_border_color": "FFFFFF",
+          "profile_sidebar_fill_color": "FFFFFF",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 38,
+        "favorite_count": 30,
+        "entities":  {
+          "hashtags":  [
+             {
+              "text": "InclusiveDesign",
+              "indices":  [
+                0,
+                16
+              ]
+            }
+          ],
+          "symbols":  [],
+          "user_mentions":  [],
+          "urls":  [],
+          "media":  [
+             {
+              "id": 621149684443254800,
+              "id_str": "621149684443254784",
+              "indices":  [
+                65,
+                87
+              ],
+              "media_url": "http://pbs.twimg.com/media/CJ7EWNWWEAAoNek.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/CJ7EWNWWEAAoNek.jpg",
+              "url": "http://t.co/GE22yjp87W",
+              "display_url": "pic.twitter.com/GE22yjp87W",
+              "expanded_url": "http://twitter.com/MicrosoftDesign/status/621149684799770624/photo/1",
+              "type": "photo",
+              "sizes":  {
+                "large":  {
+                  "w": 1024,
+                  "h": 579,
+                  "resize": "fit"
+                },
+                "thumb":  {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium":  {
+                  "w": 600,
+                  "h": 339,
+                  "resize": "fit"
+                },
+                "small":  {
+                  "w": 340,
+                  "h": 192,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "is_quote_status": false,
+      "retweet_count": 38,
+      "favorite_count": 0,
+      "entities":  {
+        "hashtags":  [
+           {
+            "text": "InclusiveDesign",
+            "indices":  [
+              21,
+              37
+            ]
+          }
+        ],
+        "symbols":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "MicrosoftDesign",
+            "name": "Microsoft Design",
+            "id": 209202416,
+            "id_str": "209202416",
+            "indices":  [
+              3,
+              19
+            ]
+          }
+        ],
+        "urls":  [],
+        "media":  [
+           {
+            "id": 621149684443254800,
+            "id_str": "621149684443254784",
+            "indices":  [
+              86,
+              108
+            ],
+            "media_url": "http://pbs.twimg.com/media/CJ7EWNWWEAAoNek.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CJ7EWNWWEAAoNek.jpg",
+            "url": "http://t.co/GE22yjp87W",
+            "display_url": "pic.twitter.com/GE22yjp87W",
+            "expanded_url": "http://twitter.com/MicrosoftDesign/status/621149684799770624/photo/1",
+            "type": "photo",
+            "sizes":  {
+              "large":  {
+                "w": 1024,
+                "h": 579,
+                "resize": "fit"
+              },
+              "thumb":  {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium":  {
+                "w": 600,
+                "h": 339,
+                "resize": "fit"
+              },
+              "small":  {
+                "w": 340,
+                "h": 192,
+                "resize": "fit"
+              }
+            },
+            "source_status_id": 621149684799770600,
+            "source_status_id_str": "621149684799770624",
+            "source_user_id": 209202416,
+            "source_user_id_str": "209202416"
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+     {
+      "metadata":  {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "created_at": "Wed Jul 15 17:03:18 +0000 2015",
+      "id": 621364428970303500,
+      "id_str": "621364428970303488",
+      "text": "Hello #HumanDiversity tools for the workshop at @ccemx #MexicoDF #MacularDegeneration #Glasses #Inclusivedesign http://t.co/EzM6r9RSBX",
+      "source": "<a href="http://www.hootsuite.com" rel="nofollow">Hootsuite</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user":  {
+        "id": 11193872,
+        "id_str": "11193872",
+        "name": "Avanti-Avanti Studio",
+        "screen_name": "avantiavanti",
+        "location": "Barcelona",
+        "description": "Somos un estudio creativo de Barcelona especializado en #Diseñoparatodos / We are a Barcelona-based creative\r\nstudio specialized in #Designforall",
+        "url": "http://t.co/Ebgg6Y9MBH",
+        "entities":  {
+          "url":  {
+            "urls":  [
+               {
+                "url": "http://t.co/Ebgg6Y9MBH",
+                "expanded_url": "http://es.avanti-avanti.com/",
+                "display_url": "es.avanti-avanti.com",
+                "indices":  [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description":  {
+            "urls":  []
+          }
+        },
+        "protected": false,
+        "followers_count": 559,
+        "friends_count": 1066,
+        "listed_count": 23,
+        "created_at": "Sat Dec 15 12:03:49 +0000 2007",
+        "favourites_count": 216,
+        "utc_offset": 7200,
+        "time_zone": "Madrid",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 833,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "FFFFFF",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/1904092/background.gif",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/1904092/background.gif",
+        "profile_background_tile": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/3585533841/f0f6ce714cad73cff8410579693e49c4_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/3585533841/f0f6ce714cad73cff8410579693e49c4_normal.jpeg",
+        "profile_link_color": "999999",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "FFFFFF",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "entities":  {
+        "hashtags":  [
+           {
+            "text": "HumanDiversity",
+            "indices":  [
+              6,
+              21
+            ]
+          },
+           {
+            "text": "MexicoDF",
+            "indices":  [
+              55,
+              64
+            ]
+          },
+           {
+            "text": "MacularDegeneration",
+            "indices":  [
+              65,
+              85
+            ]
+          },
+           {
+            "text": "Glasses",
+            "indices":  [
+              86,
+              94
+            ]
+          },
+           {
+            "text": "Inclusivedesign",
+            "indices":  [
+              95,
+              111
+            ]
+          }
+        ],
+        "symbols":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "ccemx",
+            "name": "Centro Cult España",
+            "id": 102835920,
+            "id_str": "102835920",
+            "indices":  [
+              48,
+              54
+            ]
+          }
+        ],
+        "urls":  [
+           {
+            "url": "http://t.co/EzM6r9RSBX",
+            "expanded_url": "http://ow.ly/i/bPs3t",
+            "display_url": "ow.ly/i/bPs3t",
+            "indices":  [
+              112,
+              134
+            ]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+     {
+      "metadata":  {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "created_at": "Wed Jul 15 16:48:53 +0000 2015",
+      "id": 621360798183481300,
+      "id_str": "621360798183481344",
+      "text": "RT @avantiavanti: Many thanks @color_Add for the filters #colorblindness #glasses tools for the workshop at @ccemx #Inclusivedesign http://…",
+      "source": "<a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user":  {
+        "id": 2230567164,
+        "id_str": "2230567164",
+        "name": "Señorita Prozac",
+        "screen_name": "WurtzelPizarnik",
+        "location": "Nación Prozac",
+        "description": "Proust/Wurtzel/Pizarnik/Kundera/Beauvor/Nietzsche/GarcíaMárquez/Sartre/Ruesch... Groupie de las mujeres que son talentosas y viven atormentadas... 24 años UNAM",
+        "url": null,
+        "entities":  {
+          "description":  {
+            "urls":  []
+          }
+        },
+        "protected": false,
+        "followers_count": 1191,
+        "friends_count": 1018,
+        "listed_count": 15,
+        "created_at": "Wed Dec 04 22:28:28 +0000 2013",
+        "favourites_count": 2930,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 20792,
+        "lang": "es",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "3AC433",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+        "profile_background_tile": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/615174455459840000/khXHF9V3_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/615174455459840000/khXHF9V3_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/2230567164/1432175344",
+        "profile_link_color": "228513",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "EFEFEF",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status":  {
+        "metadata":  {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "created_at": "Wed Jul 15 16:43:55 +0000 2015",
+        "id": 621359550948593700,
+        "id_str": "621359550948593665",
+        "text": "Many thanks @color_Add for the filters #colorblindness #glasses tools for the workshop at @ccemx #Inclusivedesign http://t.co/dx6ar3gXca",
+        "source": "<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user":  {
+          "id": 11193872,
+          "id_str": "11193872",
+          "name": "Avanti-Avanti Studio",
+          "screen_name": "avantiavanti",
+          "location": "Barcelona",
+          "description": "Somos un estudio creativo de Barcelona especializado en #Diseñoparatodos / We are a Barcelona-based creative\r\nstudio specialized in #Designforall",
+          "url": "http://t.co/Ebgg6Y9MBH",
+          "entities":  {
+            "url":  {
+              "urls":  [
+                 {
+                  "url": "http://t.co/Ebgg6Y9MBH",
+                  "expanded_url": "http://es.avanti-avanti.com/",
+                  "display_url": "es.avanti-avanti.com",
+                  "indices":  [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description":  {
+              "urls":  []
+            }
+          },
+          "protected": false,
+          "followers_count": 559,
+          "friends_count": 1066,
+          "listed_count": 23,
+          "created_at": "Sat Dec 15 12:03:49 +0000 2007",
+          "favourites_count": 216,
+          "utc_offset": 7200,
+          "time_zone": "Madrid",
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 833,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "FFFFFF",
+          "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/1904092/background.gif",
+          "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/1904092/background.gif",
+          "profile_background_tile": true,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/3585533841/f0f6ce714cad73cff8410579693e49c4_normal.jpeg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/3585533841/f0f6ce714cad73cff8410579693e49c4_normal.jpeg",
+          "profile_link_color": "999999",
+          "profile_sidebar_border_color": "FFFFFF",
+          "profile_sidebar_fill_color": "FFFFFF",
+          "profile_text_color": "000000",
+          "profile_use_background_image": false,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2,
+        "favorite_count": 2,
+        "entities":  {
+          "hashtags":  [
+             {
+              "text": "colorblindness",
+              "indices":  [
+                39,
+                54
+              ]
+            },
+             {
+              "text": "glasses",
+              "indices":  [
+                55,
+                63
+              ]
+            },
+             {
+              "text": "Inclusivedesign",
+              "indices":  [
+                97,
+                113
+              ]
+            }
+          ],
+          "symbols":  [],
+          "user_mentions":  [
+             {
+              "screen_name": "ccemx",
+              "name": "Centro Cult España",
+              "id": 102835920,
+              "id_str": "102835920",
+              "indices":  [
+                90,
+                96
+              ]
+            }
+          ],
+          "urls":  [],
+          "media":  [
+             {
+              "id": 621359549220548600,
+              "id_str": "621359549220548609",
+              "indices":  [
+                114,
+                136
+              ],
+              "media_url": "http://pbs.twimg.com/media/CJ-DN8kWcAE6F2K.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/CJ-DN8kWcAE6F2K.jpg",
+              "url": "http://t.co/dx6ar3gXca",
+              "display_url": "pic.twitter.com/dx6ar3gXca",
+              "expanded_url": "http://twitter.com/avantiavanti/status/621359550948593665/photo/1",
+              "type": "photo",
+              "sizes":  {
+                "large":  {
+                  "w": 1024,
+                  "h": 693,
+                  "resize": "fit"
+                },
+                "thumb":  {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium":  {
+                  "w": 600,
+                  "h": 406,
+                  "resize": "fit"
+                },
+                "small":  {
+                  "w": 340,
+                  "h": 230,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "is_quote_status": false,
+      "retweet_count": 2,
+      "favorite_count": 0,
+      "entities":  {
+        "hashtags":  [
+           {
+            "text": "colorblindness",
+            "indices":  [
+              57,
+              72
+            ]
+          },
+           {
+            "text": "glasses",
+            "indices":  [
+              73,
+              81
+            ]
+          },
+           {
+            "text": "Inclusivedesign",
+            "indices":  [
+              115,
+              131
+            ]
+          }
+        ],
+        "symbols":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "avantiavanti",
+            "name": "Avanti-Avanti Studio",
+            "id": 11193872,
+            "id_str": "11193872",
+            "indices":  [
+              3,
+              16
+            ]
+          },
+           {
+            "screen_name": "ccemx",
+            "name": "Centro Cult España",
+            "id": 102835920,
+            "id_str": "102835920",
+            "indices":  [
+              108,
+              114
+            ]
+          }
+        ],
+        "urls":  [],
+        "media":  [
+           {
+            "id": 621359549220548600,
+            "id_str": "621359549220548609",
+            "indices":  [
+              139,
+              140
+            ],
+            "media_url": "http://pbs.twimg.com/media/CJ-DN8kWcAE6F2K.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CJ-DN8kWcAE6F2K.jpg",
+            "url": "http://t.co/dx6ar3gXca",
+            "display_url": "pic.twitter.com/dx6ar3gXca",
+            "expanded_url": "http://twitter.com/avantiavanti/status/621359550948593665/photo/1",
+            "type": "photo",
+            "sizes":  {
+              "large":  {
+                "w": 1024,
+                "h": 693,
+                "resize": "fit"
+              },
+              "thumb":  {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium":  {
+                "w": 600,
+                "h": 406,
+                "resize": "fit"
+              },
+              "small":  {
+                "w": 340,
+                "h": 230,
+                "resize": "fit"
+              }
+            },
+            "source_status_id": 621359550948593700,
+            "source_status_id_str": "621359550948593665",
+            "source_user_id": 11193872,
+            "source_user_id_str": "11193872"
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+     {
+      "metadata":  {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "created_at": "Wed Jul 15 16:44:44 +0000 2015",
+      "id": 621359755529850900,
+      "id_str": "621359755529850880",
+      "text": "RT @avantiavanti: Many thanks @color_Add for the filters #colorblindness #glasses tools for the workshop at @ccemx #Inclusivedesign http://…",
+      "source": "<a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user":  {
+        "id": 102835920,
+        "id_str": "102835920",
+        "name": "Centro Cult España",
+        "screen_name": "ccemx",
+        "location": "México DF",
+        "description": "Red de Centros Culturales @AECID_es: exposiciones música teatro danza pensamiento formación niñ@s innovación tecnología Entrada libre y gratuita",
+        "url": "http://t.co/Ji7vDpvZnP",
+        "entities":  {
+          "url":  {
+            "urls":  [
+               {
+                "url": "http://t.co/Ji7vDpvZnP",
+                "expanded_url": "http://www.ccemx.org",
+                "display_url": "ccemx.org",
+                "indices":  [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description":  {
+            "urls":  []
+          }
+        },
+        "protected": false,
+        "followers_count": 97400,
+        "friends_count": 938,
+        "listed_count": 1058,
+        "created_at": "Fri Jan 08 00:37:28 +0000 2010",
+        "favourites_count": 1063,
+        "utc_offset": -18000,
+        "time_zone": "Mexico City",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 8852,
+        "lang": "es",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "F2EFF0",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/516673144904351746/5kcSnIJ3.jpeg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/516673144904351746/5kcSnIJ3.jpeg",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/3253767521/4f78798c3e057f8d864216e8ee5b0fec_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/3253767521/4f78798c3e057f8d864216e8ee5b0fec_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/102835920/1435771743",
+        "profile_link_color": "DD2E44",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "FFFFFF",
+        "profile_text_color": "000000",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status":  {
+        "metadata":  {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "created_at": "Wed Jul 15 16:43:55 +0000 2015",
+        "id": 621359550948593700,
+        "id_str": "621359550948593665",
+        "text": "Many thanks @color_Add for the filters #colorblindness #glasses tools for the workshop at @ccemx #Inclusivedesign http://t.co/dx6ar3gXca",
+        "source": "<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user":  {
+          "id": 11193872,
+          "id_str": "11193872",
+          "name": "Avanti-Avanti Studio",
+          "screen_name": "avantiavanti",
+          "location": "Barcelona",
+          "description": "Somos un estudio creativo de Barcelona especializado en #Diseñoparatodos / We are a Barcelona-based creative\r\nstudio specialized in #Designforall",
+          "url": "http://t.co/Ebgg6Y9MBH",
+          "entities":  {
+            "url":  {
+              "urls":  [
+                 {
+                  "url": "http://t.co/Ebgg6Y9MBH",
+                  "expanded_url": "http://es.avanti-avanti.com/",
+                  "display_url": "es.avanti-avanti.com",
+                  "indices":  [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description":  {
+              "urls":  []
+            }
+          },
+          "protected": false,
+          "followers_count": 559,
+          "friends_count": 1066,
+          "listed_count": 23,
+          "created_at": "Sat Dec 15 12:03:49 +0000 2007",
+          "favourites_count": 216,
+          "utc_offset": 7200,
+          "time_zone": "Madrid",
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 833,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "FFFFFF",
+          "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/1904092/background.gif",
+          "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/1904092/background.gif",
+          "profile_background_tile": true,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/3585533841/f0f6ce714cad73cff8410579693e49c4_normal.jpeg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/3585533841/f0f6ce714cad73cff8410579693e49c4_normal.jpeg",
+          "profile_link_color": "999999",
+          "profile_sidebar_border_color": "FFFFFF",
+          "profile_sidebar_fill_color": "FFFFFF",
+          "profile_text_color": "000000",
+          "profile_use_background_image": false,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2,
+        "favorite_count": 2,
+        "entities":  {
+          "hashtags":  [
+             {
+              "text": "colorblindness",
+              "indices":  [
+                39,
+                54
+              ]
+            },
+             {
+              "text": "glasses",
+              "indices":  [
+                55,
+                63
+              ]
+            },
+             {
+              "text": "Inclusivedesign",
+              "indices":  [
+                97,
+                113
+              ]
+            }
+          ],
+          "symbols":  [],
+          "user_mentions":  [
+             {
+              "screen_name": "ccemx",
+              "name": "Centro Cult España",
+              "id": 102835920,
+              "id_str": "102835920",
+              "indices":  [
+                90,
+                96
+              ]
+            }
+          ],
+          "urls":  [],
+          "media":  [
+             {
+              "id": 621359549220548600,
+              "id_str": "621359549220548609",
+              "indices":  [
+                114,
+                136
+              ],
+              "media_url": "http://pbs.twimg.com/media/CJ-DN8kWcAE6F2K.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/CJ-DN8kWcAE6F2K.jpg",
+              "url": "http://t.co/dx6ar3gXca",
+              "display_url": "pic.twitter.com/dx6ar3gXca",
+              "expanded_url": "http://twitter.com/avantiavanti/status/621359550948593665/photo/1",
+              "type": "photo",
+              "sizes":  {
+                "large":  {
+                  "w": 1024,
+                  "h": 693,
+                  "resize": "fit"
+                },
+                "thumb":  {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium":  {
+                  "w": 600,
+                  "h": 406,
+                  "resize": "fit"
+                },
+                "small":  {
+                  "w": 340,
+                  "h": 230,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "is_quote_status": false,
+      "retweet_count": 2,
+      "favorite_count": 0,
+      "entities":  {
+        "hashtags":  [
+           {
+            "text": "colorblindness",
+            "indices":  [
+              57,
+              72
+            ]
+          },
+           {
+            "text": "glasses",
+            "indices":  [
+              73,
+              81
+            ]
+          },
+           {
+            "text": "Inclusivedesign",
+            "indices":  [
+              115,
+              131
+            ]
+          }
+        ],
+        "symbols":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "avantiavanti",
+            "name": "Avanti-Avanti Studio",
+            "id": 11193872,
+            "id_str": "11193872",
+            "indices":  [
+              3,
+              16
+            ]
+          },
+           {
+            "screen_name": "ccemx",
+            "name": "Centro Cult España",
+            "id": 102835920,
+            "id_str": "102835920",
+            "indices":  [
+              108,
+              114
+            ]
+          }
+        ],
+        "urls":  [],
+        "media":  [
+           {
+            "id": 621359549220548600,
+            "id_str": "621359549220548609",
+            "indices":  [
+              139,
+              140
+            ],
+            "media_url": "http://pbs.twimg.com/media/CJ-DN8kWcAE6F2K.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CJ-DN8kWcAE6F2K.jpg",
+            "url": "http://t.co/dx6ar3gXca",
+            "display_url": "pic.twitter.com/dx6ar3gXca",
+            "expanded_url": "http://twitter.com/avantiavanti/status/621359550948593665/photo/1",
+            "type": "photo",
+            "sizes":  {
+              "large":  {
+                "w": 1024,
+                "h": 693,
+                "resize": "fit"
+              },
+              "thumb":  {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium":  {
+                "w": 600,
+                "h": 406,
+                "resize": "fit"
+              },
+              "small":  {
+                "w": 340,
+                "h": 230,
+                "resize": "fit"
+              }
+            },
+            "source_status_id": 621359550948593700,
+            "source_status_id_str": "621359550948593665",
+            "source_user_id": 11193872,
+            "source_user_id_str": "11193872"
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+     {
+      "metadata":  {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "created_at": "Wed Jul 15 16:43:55 +0000 2015",
+      "id": 621359550948593700,
+      "id_str": "621359550948593665",
+      "text": "Many thanks @color_Add for the filters #colorblindness #glasses tools for the workshop at @ccemx #Inclusivedesign http://t.co/dx6ar3gXca",
+      "source": "<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user":  {
+        "id": 11193872,
+        "id_str": "11193872",
+        "name": "Avanti-Avanti Studio",
+        "screen_name": "avantiavanti",
+        "location": "Barcelona",
+        "description": "Somos un estudio creativo de Barcelona especializado en #Diseñoparatodos / We are a Barcelona-based creative\r\nstudio specialized in #Designforall",
+        "url": "http://t.co/Ebgg6Y9MBH",
+        "entities":  {
+          "url":  {
+            "urls":  [
+               {
+                "url": "http://t.co/Ebgg6Y9MBH",
+                "expanded_url": "http://es.avanti-avanti.com/",
+                "display_url": "es.avanti-avanti.com",
+                "indices":  [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description":  {
+            "urls":  []
+          }
+        },
+        "protected": false,
+        "followers_count": 559,
+        "friends_count": 1066,
+        "listed_count": 23,
+        "created_at": "Sat Dec 15 12:03:49 +0000 2007",
+        "favourites_count": 216,
+        "utc_offset": 7200,
+        "time_zone": "Madrid",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 833,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "FFFFFF",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/1904092/background.gif",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/1904092/background.gif",
+        "profile_background_tile": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/3585533841/f0f6ce714cad73cff8410579693e49c4_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/3585533841/f0f6ce714cad73cff8410579693e49c4_normal.jpeg",
+        "profile_link_color": "999999",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "FFFFFF",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 2,
+      "favorite_count": 2,
+      "entities":  {
+        "hashtags":  [
+           {
+            "text": "colorblindness",
+            "indices":  [
+              39,
+              54
+            ]
+          },
+           {
+            "text": "glasses",
+            "indices":  [
+              55,
+              63
+            ]
+          },
+           {
+            "text": "Inclusivedesign",
+            "indices":  [
+              97,
+              113
+            ]
+          }
+        ],
+        "symbols":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "ccemx",
+            "name": "Centro Cult España",
+            "id": 102835920,
+            "id_str": "102835920",
+            "indices":  [
+              90,
+              96
+            ]
+          }
+        ],
+        "urls":  [],
+        "media":  [
+           {
+            "id": 621359549220548600,
+            "id_str": "621359549220548609",
+            "indices":  [
+              114,
+              136
+            ],
+            "media_url": "http://pbs.twimg.com/media/CJ-DN8kWcAE6F2K.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CJ-DN8kWcAE6F2K.jpg",
+            "url": "http://t.co/dx6ar3gXca",
+            "display_url": "pic.twitter.com/dx6ar3gXca",
+            "expanded_url": "http://twitter.com/avantiavanti/status/621359550948593665/photo/1",
+            "type": "photo",
+            "sizes":  {
+              "large":  {
+                "w": 1024,
+                "h": 693,
+                "resize": "fit"
+              },
+              "thumb":  {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium":  {
+                "w": 600,
+                "h": 406,
+                "resize": "fit"
+              },
+              "small":  {
+                "w": 340,
+                "h": 230,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+     {
+      "metadata":  {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "created_at": "Wed Jul 15 16:42:00 +0000 2015",
+      "id": 621359065449545700,
+      "id_str": "621359065449545728",
+      "text": "RT @bcurtisdavidson: Great piece on #accessibility - an untapped market: http://t.co/VbQrqMGsb8 via @TMNmag #inclusivedesign",
+      "source": "<a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user":  {
+        "id": 524192096,
+        "id_str": "524192096",
+        "name": "Eleonora Riggi",
+        "screen_name": "eleriggi",
+        "location": "Nettuno (Roma)",
+        "description": "La disabilità è solo un dettaglio. Essere normali nella disabilità è una gran bella vita. Il sorriso è la mia arma. Mia fedele compagna la musica dei Pooh.",
+        "url": null,
+        "entities":  {
+          "description":  {
+            "urls":  []
+          }
+        },
+        "protected": false,
+        "followers_count": 2090,
+        "friends_count": 2232,
+        "listed_count": 43,
+        "created_at": "Wed Mar 14 09:39:03 +0000 2012",
+        "favourites_count": 26191,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 30106,
+        "lang": "it",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/564194732772171776/GW2xvswE_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/564194732772171776/GW2xvswE_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/524192096/1350909364",
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status":  {
+        "metadata":  {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "created_at": "Wed Jul 15 16:39:07 +0000 2015",
+        "id": 621358341265076200,
+        "id_str": "621358341265076224",
+        "text": "Great piece on #accessibility - an untapped market: http://t.co/VbQrqMGsb8 via @TMNmag #inclusivedesign",
+        "source": "<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user":  {
+          "id": 14925949,
+          "id_str": "14925949",
+          "name": "Bill Curtis-Davidson",
+          "screen_name": "bcurtisdavidson",
+          "location": "Atlanta",
+          "description": "A seasoned professional with a unique blend of creative, business, design and technical skills. Postings are my own, not IBM's.",
+          "url": "http://t.co/9LnnFtmqIp",
+          "entities":  {
+            "url":  {
+              "urls":  [
+                 {
+                  "url": "http://t.co/9LnnFtmqIp",
+                  "expanded_url": "http://billcurtisdavidson.com",
+                  "display_url": "billcurtisdavidson.com",
+                  "indices":  [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description":  {
+              "urls":  []
+            }
+          },
+          "protected": false,
+          "followers_count": 684,
+          "friends_count": 1083,
+          "listed_count": 73,
+          "created_at": "Tue May 27 21:42:42 +0000 2008",
+          "favourites_count": 49,
+          "utc_offset": -14400,
+          "time_zone": "Eastern Time (US & Canada)",
+          "geo_enabled": true,
+          "verified": false,
+          "statuses_count": 1868,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "000000",
+          "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/464089266/earth_528_118607.jpg",
+          "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/464089266/earth_528_118607.jpg",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/425025024257294336/-PjD9bL-_normal.jpeg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/425025024257294336/-PjD9bL-_normal.jpeg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/14925949/1402447045",
+          "profile_link_color": "448AB3",
+          "profile_sidebar_border_color": "2A73E0",
+          "profile_sidebar_fill_color": "0F0F0F",
+          "profile_text_color": "525D6B",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2,
+        "favorite_count": 1,
+        "entities":  {
+          "hashtags":  [
+             {
+              "text": "accessibility",
+              "indices":  [
+                15,
+                29
+              ]
+            },
+             {
+              "text": "inclusivedesign",
+              "indices":  [
+                87,
+                103
+              ]
+            }
+          ],
+          "symbols":  [],
+          "user_mentions":  [
+             {
+              "screen_name": "TMNmag",
+              "name": "TheMobileNetwork",
+              "id": 702675942,
+              "id_str": "702675942",
+              "indices":  [
+                79,
+                86
+              ]
+            }
+          ],
+          "urls":  [
+             {
+              "url": "http://t.co/VbQrqMGsb8",
+              "expanded_url": "http://the-mobile-network.com/2015/07/accessibility-an-untapped-market/",
+              "display_url": "the-mobile-network.com/2015/07/access…",
+              "indices":  [
+                52,
+                74
+              ]
+            }
+          ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "is_quote_status": false,
+      "retweet_count": 2,
+      "favorite_count": 0,
+      "entities":  {
+        "hashtags":  [
+           {
+            "text": "accessibility",
+            "indices":  [
+              36,
+              50
+            ]
+          },
+           {
+            "text": "inclusivedesign",
+            "indices":  [
+              108,
+              124
+            ]
+          }
+        ],
+        "symbols":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "bcurtisdavidson",
+            "name": "Bill Curtis-Davidson",
+            "id": 14925949,
+            "id_str": "14925949",
+            "indices":  [
+              3,
+              19
+            ]
+          },
+           {
+            "screen_name": "TMNmag",
+            "name": "TheMobileNetwork",
+            "id": 702675942,
+            "id_str": "702675942",
+            "indices":  [
+              100,
+              107
+            ]
+          }
+        ],
+        "urls":  [
+           {
+            "url": "http://t.co/VbQrqMGsb8",
+            "expanded_url": "http://the-mobile-network.com/2015/07/accessibility-an-untapped-market/",
+            "display_url": "the-mobile-network.com/2015/07/access…",
+            "indices":  [
+              73,
+              95
+            ]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+     {
+      "metadata":  {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "created_at": "Wed Jul 15 16:39:39 +0000 2015",
+      "id": 621358474337894400,
+      "id_str": "621358474337894400",
+      "text": "RT @bcurtisdavidson: Great piece on #accessibility - an untapped market: http://t.co/VbQrqMGsb8 via @TMNmag #inclusivedesign",
+      "source": "<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user":  {
+        "id": 14157696,
+        "id_str": "14157696",
+        "name": "nicola palmarini",
+        "screen_name": "nipalm",
+        "location": "Boston, MA",
+        "description": "I care about humans: all what they do matter to me. Author #LavorareoCollaborare? and #B00merang #brand #collaboration #customerxp advocate. Tweets are my own.",
+        "url": "http://t.co/PZtnJu8pmD",
+        "entities":  {
+          "url":  {
+            "urls":  [
+               {
+                "url": "http://t.co/PZtnJu8pmD",
+                "expanded_url": "http://bit.ly/14p0MM4",
+                "display_url": "bit.ly/14p0MM4",
+                "indices":  [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description":  {
+            "urls":  []
+          }
+        },
+        "protected": false,
+        "followers_count": 1854,
+        "friends_count": 1193,
+        "listed_count": 84,
+        "created_at": "Sun Mar 16 14:46:38 +0000 2008",
+        "favourites_count": 236,
+        "utc_offset": 7200,
+        "time_zone": "Rome",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 6941,
+        "lang": "it",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "FFFFFF",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/262178778/10alexpict_twitter_ok_def.jpg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/262178778/10alexpict_twitter_ok_def.jpg",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1377258964/nic_icon_barba_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1377258964/nic_icon_barba_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/14157696/1402240563",
+        "profile_link_color": "0084B4",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status":  {
+        "metadata":  {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "created_at": "Wed Jul 15 16:39:07 +0000 2015",
+        "id": 621358341265076200,
+        "id_str": "621358341265076224",
+        "text": "Great piece on #accessibility - an untapped market: http://t.co/VbQrqMGsb8 via @TMNmag #inclusivedesign",
+        "source": "<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user":  {
+          "id": 14925949,
+          "id_str": "14925949",
+          "name": "Bill Curtis-Davidson",
+          "screen_name": "bcurtisdavidson",
+          "location": "Atlanta",
+          "description": "A seasoned professional with a unique blend of creative, business, design and technical skills. Postings are my own, not IBM's.",
+          "url": "http://t.co/9LnnFtmqIp",
+          "entities":  {
+            "url":  {
+              "urls":  [
+                 {
+                  "url": "http://t.co/9LnnFtmqIp",
+                  "expanded_url": "http://billcurtisdavidson.com",
+                  "display_url": "billcurtisdavidson.com",
+                  "indices":  [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description":  {
+              "urls":  []
+            }
+          },
+          "protected": false,
+          "followers_count": 684,
+          "friends_count": 1083,
+          "listed_count": 73,
+          "created_at": "Tue May 27 21:42:42 +0000 2008",
+          "favourites_count": 49,
+          "utc_offset": -14400,
+          "time_zone": "Eastern Time (US & Canada)",
+          "geo_enabled": true,
+          "verified": false,
+          "statuses_count": 1868,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "000000",
+          "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/464089266/earth_528_118607.jpg",
+          "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/464089266/earth_528_118607.jpg",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/425025024257294336/-PjD9bL-_normal.jpeg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/425025024257294336/-PjD9bL-_normal.jpeg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/14925949/1402447045",
+          "profile_link_color": "448AB3",
+          "profile_sidebar_border_color": "2A73E0",
+          "profile_sidebar_fill_color": "0F0F0F",
+          "profile_text_color": "525D6B",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2,
+        "favorite_count": 1,
+        "entities":  {
+          "hashtags":  [
+             {
+              "text": "accessibility",
+              "indices":  [
+                15,
+                29
+              ]
+            },
+             {
+              "text": "inclusivedesign",
+              "indices":  [
+                87,
+                103
+              ]
+            }
+          ],
+          "symbols":  [],
+          "user_mentions":  [
+             {
+              "screen_name": "TMNmag",
+              "name": "TheMobileNetwork",
+              "id": 702675942,
+              "id_str": "702675942",
+              "indices":  [
+                79,
+                86
+              ]
+            }
+          ],
+          "urls":  [
+             {
+              "url": "http://t.co/VbQrqMGsb8",
+              "expanded_url": "http://the-mobile-network.com/2015/07/accessibility-an-untapped-market/",
+              "display_url": "the-mobile-network.com/2015/07/access…",
+              "indices":  [
+                52,
+                74
+              ]
+            }
+          ]
+        },
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "is_quote_status": false,
+      "retweet_count": 2,
+      "favorite_count": 0,
+      "entities":  {
+        "hashtags":  [
+           {
+            "text": "accessibility",
+            "indices":  [
+              36,
+              50
+            ]
+          },
+           {
+            "text": "inclusivedesign",
+            "indices":  [
+              108,
+              124
+            ]
+          }
+        ],
+        "symbols":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "bcurtisdavidson",
+            "name": "Bill Curtis-Davidson",
+            "id": 14925949,
+            "id_str": "14925949",
+            "indices":  [
+              3,
+              19
+            ]
+          },
+           {
+            "screen_name": "TMNmag",
+            "name": "TheMobileNetwork",
+            "id": 702675942,
+            "id_str": "702675942",
+            "indices":  [
+              100,
+              107
+            ]
+          }
+        ],
+        "urls":  [
+           {
+            "url": "http://t.co/VbQrqMGsb8",
+            "expanded_url": "http://the-mobile-network.com/2015/07/accessibility-an-untapped-market/",
+            "display_url": "the-mobile-network.com/2015/07/access…",
+            "indices":  [
+              73,
+              95
+            ]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+     {
+      "metadata":  {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "created_at": "Wed Jul 15 16:39:07 +0000 2015",
+      "id": 621358341265076200,
+      "id_str": "621358341265076224",
+      "text": "Great piece on #accessibility - an untapped market: http://t.co/VbQrqMGsb8 via @TMNmag #inclusivedesign",
+      "source": "<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user":  {
+        "id": 14925949,
+        "id_str": "14925949",
+        "name": "Bill Curtis-Davidson",
+        "screen_name": "bcurtisdavidson",
+        "location": "Atlanta",
+        "description": "A seasoned professional with a unique blend of creative, business, design and technical skills. Postings are my own, not IBM's.",
+        "url": "http://t.co/9LnnFtmqIp",
+        "entities":  {
+          "url":  {
+            "urls":  [
+               {
+                "url": "http://t.co/9LnnFtmqIp",
+                "expanded_url": "http://billcurtisdavidson.com",
+                "display_url": "billcurtisdavidson.com",
+                "indices":  [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description":  {
+            "urls":  []
+          }
+        },
+        "protected": false,
+        "followers_count": 684,
+        "friends_count": 1083,
+        "listed_count": 73,
+        "created_at": "Tue May 27 21:42:42 +0000 2008",
+        "favourites_count": 49,
+        "utc_offset": -14400,
+        "time_zone": "Eastern Time (US & Canada)",
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 1868,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/464089266/earth_528_118607.jpg",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/464089266/earth_528_118607.jpg",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/425025024257294336/-PjD9bL-_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/425025024257294336/-PjD9bL-_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/14925949/1402447045",
+        "profile_link_color": "448AB3",
+        "profile_sidebar_border_color": "2A73E0",
+        "profile_sidebar_fill_color": "0F0F0F",
+        "profile_text_color": "525D6B",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 2,
+      "favorite_count": 1,
+      "entities":  {
+        "hashtags":  [
+           {
+            "text": "accessibility",
+            "indices":  [
+              15,
+              29
+            ]
+          },
+           {
+            "text": "inclusivedesign",
+            "indices":  [
+              87,
+              103
+            ]
+          }
+        ],
+        "symbols":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "TMNmag",
+            "name": "TheMobileNetwork",
+            "id": 702675942,
+            "id_str": "702675942",
+            "indices":  [
+              79,
+              86
+            ]
+          }
+        ],
+        "urls":  [
+           {
+            "url": "http://t.co/VbQrqMGsb8",
+            "expanded_url": "http://the-mobile-network.com/2015/07/accessibility-an-untapped-market/",
+            "display_url": "the-mobile-network.com/2015/07/access…",
+            "indices":  [
+              52,
+              74
+            ]
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+     {
+      "metadata":  {
+        "iso_language_code": "es",
+        "result_type": "recent"
+      },
+      "created_at": "Wed Jul 15 16:38:04 +0000 2015",
+      "id": 621358078756302800,
+      "id_str": "621358078756302848",
+      "text": "Gracias @color_Add por vuestros filtros para gafas #daltonismo @ccemx #cdmx #diseñoparatodos #inclusivedesign http://t.co/mTlbrh7KyN",
+      "source": "<a href="http://twitter.com" rel="nofollow">Twitter Web Client</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user":  {
+        "id": 11193872,
+        "id_str": "11193872",
+        "name": "Avanti-Avanti Studio",
+        "screen_name": "avantiavanti",
+        "location": "Barcelona",
+        "description": "Somos un estudio creativo de Barcelona especializado en #Diseñoparatodos / We are a Barcelona-based creative\r\nstudio specialized in #Designforall",
+        "url": "http://t.co/Ebgg6Y9MBH",
+        "entities":  {
+          "url":  {
+            "urls":  [
+               {
+                "url": "http://t.co/Ebgg6Y9MBH",
+                "expanded_url": "http://es.avanti-avanti.com/",
+                "display_url": "es.avanti-avanti.com",
+                "indices":  [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description":  {
+            "urls":  []
+          }
+        },
+        "protected": false,
+        "followers_count": 559,
+        "friends_count": 1066,
+        "listed_count": 23,
+        "created_at": "Sat Dec 15 12:03:49 +0000 2007",
+        "favourites_count": 216,
+        "utc_offset": 7200,
+        "time_zone": "Madrid",
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 833,
+        "lang": "en",
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "FFFFFF",
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/1904092/background.gif",
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/1904092/background.gif",
+        "profile_background_tile": true,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/3585533841/f0f6ce714cad73cff8410579693e49c4_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/3585533841/f0f6ce714cad73cff8410579693e49c4_normal.jpeg",
+        "profile_link_color": "999999",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "FFFFFF",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": false,
+        "follow_request_sent": false,
+        "notifications": false
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "entities":  {
+        "hashtags":  [
+           {
+            "text": "daltonismo",
+            "indices":  [
+              51,
+              62
+            ]
+          },
+           {
+            "text": "cdmx",
+            "indices":  [
+              70,
+              75
+            ]
+          },
+           {
+            "text": "diseñoparatodos",
+            "indices":  [
+              76,
+              92
+            ]
+          },
+           {
+            "text": "inclusivedesign",
+            "indices":  [
+              93,
+              109
+            ]
+          }
+        ],
+        "symbols":  [],
+        "user_mentions":  [
+           {
+            "screen_name": "ccemx",
+            "name": "Centro Cult España",
+            "id": 102835920,
+            "id_str": "102835920",
+            "indices":  [
+              63,
+              69
+            ]
+          }
+        ],
+        "urls":  [],
+        "media":  [
+           {
+            "id": 621358076956921900,
+            "id_str": "621358076956921856",
+            "indices":  [
+              110,
+              132
+            ],
+            "media_url": "http://pbs.twimg.com/media/CJ-B4P9WUAATp85.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/CJ-B4P9WUAATp85.jpg",
+            "url": "http://t.co/mTlbrh7KyN",
+            "display_url": "pic.twitter.com/mTlbrh7KyN",
+            "expanded_url": "http://twitter.com/avantiavanti/status/621358078756302848/photo/1",
+            "type": "photo",
+            "sizes":  {
+              "large":  {
+                "w": 1024,
+                "h": 693,
+                "resize": "fit"
+              },
+              "thumb":  {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium":  {
+                "w": 600,
+                "h": 406,
+                "resize": "fit"
+              },
+              "small":  {
+                "w": 340,
+                "h": 230,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "es"
+    }
+  ],
+  "search_metadata":  {
+    "completed_in": 0.031,
+    "max_id": 621409276419002400,
+    "max_id_str": "621409276419002368",
+    "next_results": "?max_id=621358078756302847&q=%23inclusivedesign&include_entities=1",
+    "query": "%23inclusivedesign",
+    "refresh_url": "?since_id=621409276419002368&q=%23inclusivedesign&include_entities=1",
+    "count": 15,
+    "since_id": 0,
+    "since_id_str": "0"
+  }
+}

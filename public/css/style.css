@@ -34,3 +34,7 @@ button {
   border-radius: 10px;
   cursor: pointer;
 }
+
+.top-tweet {
+  background-color: #ffff66;
+}

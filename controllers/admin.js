@@ -8,7 +8,6 @@ var moment = require("moment");
 var router = express.Router();
 router.use(bodyParser.urlencoded({extended: false}));
 
-
 /*******************************************************************************
 * FIXME: Simple form and dashboard for now.
 *******************************************************************************/
@@ -52,7 +51,8 @@ var getHashtagPosts = function(object, hashtags, res) {
     client.get("search/tweets", {q: "#" + hashtag}, function(error, data, response) {
       if (!error) {
         formatDates(data.statuses);
-        hashtagPosts.push(data.statuses);
+        var topTweet = markTopTweets(data.statuses);
+        hashtagPosts.push({hashtag: hashtag, tweets: data.statuses, topTweet: topTweet});
         callback();
       } else {
         callback(error);
@@ -60,8 +60,18 @@ var getHashtagPosts = function(object, hashtags, res) {
     })
   }, function(error) {
     if (!error) {
-      object.hashtags = hashtags;
+      console.log("get hashtag posts successful.");
+
       object.hashtagPosts = hashtagPosts;
+
+      console.log("my user top tweet", object.myTopTweet.id_str, object.myTopTweet.text);
+      console.log("influencer 1 top tweet", object.influencers[0].topTweet.user.screen_name, object.influencers[0].topTweet.text);
+      console.log("influencer 2 top tweet", object.influencers[1].topTweet.user.screen_name, object.influencers[1].topTweet.text);
+      console.log("influencer 3 top tweet", object.influencers[2].topTweet.user.screen_name, object.influencers[2].topTweet.text);
+      console.log(object.hashtagPosts[0].hashtag, "top tweet", object.hashtagPosts[0].topTweet.user.screen_name, object.hashtagPosts[0].topTweet.text);
+      console.log(object.hashtagPosts[1].hashtag, "top tweet", object.hashtagPosts[1].topTweet.user.screen_name, object.hashtagPosts[1].topTweet.text);
+      console.log(object.hashtagPosts[2].hashtag, "top tweet", object.hashtagPosts[2].topTweet.user.screen_name, object.hashtagPosts[2].topTweet.text);
+
       res.render("admin/dashboard", object);
     } else {
       res.send("Error:", error);
@@ -75,7 +85,27 @@ var getInfluencers = function(object, influencers, res) {
     if (!error) {
       formatDates(data);
       object.influencers = data;
-      getHashtagPosts(object, hashtags, res);
+      async.each(data, function(influencer, callback) {
+        var params = {user_id: influencer.id_str, count: 200, include_rts: 1};
+        client.get("statuses/user_timeline", params, function(error, data, response) {
+          if (!error) {
+            formatDates(data);
+            influencer.tweets = data;
+            influencer.topTweet = markTopTweets(data);
+            callback();
+          } else {
+            callback(error);
+          }
+        })
+      }, function(error) {
+        if (!error) {
+          console.log("get influencers successful.");
+          getHashtagPosts(object, hashtags, res);
+        } else {
+          res.send("Error:", error);
+        }
+      });
+
     } else {
       res.send("Error:", error);
     }
@@ -83,11 +113,13 @@ var getInfluencers = function(object, influencers, res) {
 }
 
 var getMyTweets = function(object, user_id, res) {
-  var params = {user_id: user_id, count: 200, include_rts: 1}
-  client.get("statuses/user_timeline", params, function (error, data, response) {
+  var params = {user_id: user_id, count: 200, include_rts: 1};
+  client.get("statuses/user_timeline", params, function(error, data, response) {
     if (!error) {
+      console.log("get tweets successful.");
       formatDates(data);
       object.myTweets = data;
+      object.myTopTweet = markTopTweets(data);
       getInfluencers(object, influencers, res);
     } else {
       res.send("Error:", error);
@@ -96,7 +128,7 @@ var getMyTweets = function(object, user_id, res) {
 }
 
 var getMyFollowers = function(object, user_id, res) {
-  var params = {user_id: user_id}
+  var params = {user_id: user_id};
   client.get("followers/ids", params, function (error, data, response) {
     if (!error) {
 
@@ -131,6 +163,7 @@ var getMyFollowers = function(object, user_id, res) {
       }, function(error) {
 
         if (!error) {
+          console.log("get followers successful.");
 
           // add remaining ids
           var remainingIds = ids.map(function(id) {
@@ -161,6 +194,7 @@ var getMyUser = function(object, username, res) {
   client.get("users/show", params, function(error, data, response) {
 
     if (!error) {
+      console.log("get user successful.");
       object.myUser = data;
       getMyFollowers(object, data.id_str, res);
     } else {
@@ -181,8 +215,33 @@ var formatDates = function(entities) {
   entities.forEach(function(entity) {
 
     // check http://momentjs.com/docs/#/displaying/
-    entity.created_at = moment(entity.created_at).format("ddd MMM Do YY, h:mma");
+    entity.created_at = moment(Date.parse(entity.created_at)).format("ddd MMM Do YY, h:mma");
   });
+}
+
+/*******************************************************************************
+* helper method for marking top tweet(s) with highest retweet + favourite count
+* with a top_tweet: true property
+*
+* return first top tweet
+*******************************************************************************/
+
+var markTopTweets = function(tweets) {
+  var topCount = 0;
+  var topIndices = [];
+  tweets.forEach(function(tweet, index) {
+    var thisCount = tweet.retweet_count + tweet.favorite_count;
+    if (thisCount > topCount) {
+      topCount = thisCount;
+      topIndices = [index];
+    } else if (thisCount == topCount) {
+      topIndices.push(index);
+    }
+  });
+  topIndices.forEach(function(topIndex) {
+    tweets[topIndex].top_tweet = true;
+  })
+  return tweets[topIndices[0]];
 }
 
 /*******************************************************************************

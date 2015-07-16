@@ -15,7 +15,7 @@
   </thead>
   <tbody>
     <% tweets.forEach(function(tweet) { %>
-      <tr>
+      <tr class="<%= tweet.top_tweet ? 'top-tweet' : '' %>">
         <td><a href="/tweet/<%= tweet.id_str %>"><%= tweet.id_str %></a></td>
         <td><%= tweet.created_at %></td>
         <td class="tweet-text"><%= tweet.text %></td>
