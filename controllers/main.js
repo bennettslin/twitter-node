@@ -5,47 +5,37 @@ var async = require("async");
 var geocoder = require("geocoder");
 var moment = require("moment");
 var nodemailer = require("nodemailer");
+var CronJob = require('cron').CronJob;
 
 var router = express.Router();
 router.use(bodyParser.urlencoded({extended: false}));
 
 /*******************************************************************************
-* helper method for formatting dates
+* cron job test
+* this will make an API call and then email the result
+*
+* see docs at: https://github.com/ncb000gt/node-cron
 *******************************************************************************/
 
-var formatDates = function(entities) {
-  if (!Array.isArray(entities)) {
-    entities = [entities];
-  }
+new CronJob('*/5 * * * * *', function() {
+  console.log(new Date(), 'You will see this message every 5 seconds.');
+}, null, true, 'America/Los_Angeles');
 
-  entities.forEach(function(entity) {
+new CronJob('00 * * * * *', function() {
+  console.log(new Date(), 'You will see this message every minute.');
+}, null, true, 'America/Los_Angeles');
 
-    // check http://momentjs.com/docs/#/displaying/
-    entity.created_at = moment(Date.parse(entity.created_at)).format("ddd MMM Do YY, h:mma");
-  });
-}
+new CronJob('*/10 * * * * *', function() {
+    client.get("users/show", {screen_name: "alexthephallus"}, function(error, data, response) {
+    if (!error) {
 
-/*******************************************************************************
-* helper method for marking top tweet(s) with highest retweet + favourite count
-* with a top_tweet: true property
-*******************************************************************************/
-
-var markTopTweets = function(tweets) {
-  var topCount = 0;
-  var topIndices = [];
-  tweets.forEach(function(tweet, index) {
-    var thisCount = tweet.retweet_count + tweet.favorite_count;
-    if (thisCount > topCount) {
-      topCount = thisCount;
-      topIndices = [index];
-    } else if (thisCount == topCount) {
-      topIndices.push(index);
+      formatDates(data);
+      sendEmail("bennett@crownsocial.com", "Cron job message", "You should get this every ten seconds: " + JSON.stringify(data));
+    } else {
+      console.log("Error:", error);
     }
   });
-  topIndices.forEach(function(topIndex) {
-    tweets[topIndex].top_tweet = true;
-  })
-}
+}, null, true, 'America/Los_Angeles');
 
 /*******************************************************************************
 * get keys and secrets from developer account on https://apps.twitter.com
@@ -73,28 +63,7 @@ router.get("/", function (req, res) {
 *******************************************************************************/
 
 router.post("/email", function(req, res) {
-  console.log("get called");
-  var smtpTransport = nodemailer.createTransport("SMTP", {
-    service: "Gmail",
-    auth: {
-      user: process.env.GMAIL_ADDRESS,
-      pass: process.env.GMAIL_PASSWORD
-    }
-  });
-
-  console.log(req.body.email_to);
-  console.log(req.body.subject);
-  console.log(req.body.content);
-
-  var mailOptions = {
-    to: req.body.email_to,
-    subject : req.body.subject,
-    text : req.body.content
-  }
-
-  console.log(mailOptions);
-
-  smtpTransport.sendMail(mailOptions, function(error, response) {
+  sendEmail(req.body.email_to, req.body.subject, req.body.content, function(error, response) {
     if (error) {
       console.log("Error:", error);
       res.send("Error:", error);
@@ -295,6 +264,69 @@ router.post("/trends-place", function(req, res) {
     }
   });
 })
+
+/*******************************************************************************
+* helper method for formatting dates
+* check docs at http://momentjs.com/docs/#/displaying/
+*******************************************************************************/
+
+var formatDates = function(entities) {
+  if (!Array.isArray(entities)) {
+    entities = [entities];
+  }
+
+  entities.forEach(function(entity) {
+    entity.created_at = moment(Date.parse(entity.created_at)).format("ddd MMM Do YY, h:mma");
+  });
+}
+
+/*******************************************************************************
+* helper method for marking top tweet(s) with highest retweet + favourite count
+* with a top_tweet: true property
+*******************************************************************************/
+
+var markTopTweets = function(tweets) {
+  var topCount = 0;
+  var topIndices = [];
+  tweets.forEach(function(tweet, index) {
+    var thisCount = tweet.retweet_count + tweet.favorite_count;
+    if (thisCount > topCount) {
+      topCount = thisCount;
+      topIndices = [index];
+    } else if (thisCount == topCount) {
+      topIndices.push(index);
+    }
+  });
+  topIndices.forEach(function(topIndex) {
+    tweets[topIndex].top_tweet = true;
+  })
+}
+
+/*******************************************************************************
+* helper method for sending email
+*******************************************************************************/
+
+var sendEmail = function(email_to, subject, content, callback) {
+  var smtpTransport = nodemailer.createTransport("SMTP", {
+    service: "Gmail",
+    auth: {
+      user: process.env.GMAIL_ADDRESS,
+      pass: process.env.GMAIL_PASSWORD
+    }
+  });
+
+  var mailOptions = {
+    to: email_to,
+    subject: subject,
+    text: content
+  }
+
+  smtpTransport.sendMail(mailOptions, function(error, response) {
+    if (callback) {
+      callback(error, response);
+    }
+  });
+}
 
 /*******************************************************************************
 * streaming API
