@@ -12,30 +12,29 @@ router.use(bodyParser.urlencoded({extended: false}));
 
 /*******************************************************************************
 * cron job test
-* this will make an API call and then email the result
 *
 * see docs at: https://github.com/ncb000gt/node-cron
 *******************************************************************************/
 
-new CronJob('*/5 * * * * *', function() {
-  console.log(new Date(), 'You will see this message every 5 seconds.');
-}, null, true, 'America/Los_Angeles');
+// new CronJob('*/5 * * * * *', function() {
+//   console.log(new Date(), 'You will see this message every 5 seconds.');
+// }, null, true, 'America/Los_Angeles');
 
-new CronJob('00 * * * * *', function() {
-  console.log(new Date(), 'You will see this message every minute.');
-}, null, true, 'America/Los_Angeles');
+// new CronJob('00 * * * * *', function() {
+//   console.log(new Date(), 'You will see this message every minute.');
+// }, null, true, 'America/Los_Angeles');
 
-new CronJob('*/10 * * * * *', function() {
-    client.get("users/show", {screen_name: "alexthephallus"}, function(error, data, response) {
-    if (!error) {
-
-      formatDates(data);
-      sendEmail("bennett@crownsocial.com", "Cron job message", "You should get this every ten seconds: " + JSON.stringify(data));
-    } else {
-      console.log("Error:", error);
-    }
-  });
-}, null, true, 'America/Los_Angeles');
+// this will make an API call and then email the result
+// new CronJob('* * * * * *', function() {
+//     client.get("users/show", {screen_name: "alexthephallus"}, function(error, data, response) {
+//     if (!error) {
+//       formatDates(data);
+//       sendEmail("bennett@crownsocial.com", "Cron job message", "You should get this every ten seconds: " + JSON.stringify(data));
+//     } else {
+//       console.log("Error:", error);
+//     }
+//   });
+// }, null, true, 'America/Los_Angeles');
 
 /*******************************************************************************
 * get keys and secrets from developer account on https://apps.twitter.com
@@ -188,14 +187,51 @@ router.post("/follows", function(req, res) {
 
         if (!error) {
 
-          // add remaining ids
-          var remainingIds = ids.map(function(id) {
-            return { id_str: id, status: { id_str: "" } };
-          })
-          users = users.concat(remainingIds);
+          /*******************************************************************************
+          * if user has location, geocode to get lat and lng
+          *
+          * note that while the API call itself works,
+          * the geocoder module doesn't always return data
+          *******************************************************************************/
 
-          console.log("users count", users.length);
-          res.render("main/follows", {follows: req.body.follows, user_id: req.body.user_id, users: users});
+          var usersWithLocations = users.filter(function(user) {
+            return user.location;
+          })
+
+          async.each(usersWithLocations, function(user, locationCallback) {
+
+            geocoder.geocode(user.location, function(error, data) {
+
+              if (!error && data.results.length > 0) {
+                user.lat = data.results[0].geometry.location.lat.toFixed(2);
+                user.lng = data.results[0].geometry.location.lng.toFixed(2);
+                console.log(user.screen_name + " has coords " + user.lat + user.lng);
+              } else {
+                console.log(user.screen_name + " has no coords.");
+              }
+
+              // if error or no data, not a problem
+              locationCallback();
+            })
+
+          }, function(error) {
+
+            if (!error) {
+
+              // add remaining ids
+              var remainingIds = ids.map(function(id) {
+                return { id_str: id, status: { id_str: "" } };
+              })
+              users = users.concat(remainingIds);
+
+              console.log("users count", users.length);
+              res.render("main/follows", {follows: req.body.follows, user_id: req.body.user_id, users: users});
+
+            } else {
+              res.send("Error:", error);
+            }
+
+          });
 
         } else {
           res.send("Error:", error);
